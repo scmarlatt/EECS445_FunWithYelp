@@ -1,7 +1,8 @@
 import json
 import string
 import regex as re
-from nltk import *
+import nltk
+import nltk.classify
 
 def build_sample_file(reviews_json):
     with open("reviews_sample.json","w") as output:
@@ -30,10 +31,9 @@ def load_stop_words():
         return stopwords.read().splitlines()
 
 
-def run():
-
+def common_words_by_stars():
     # Number of reviews to process
-    num_reviews_to_process = 20000
+    num_reviews_to_process = 2000
     #------------------------------
 
     stopwords = load_stop_words()
@@ -48,11 +48,42 @@ def run():
     }
 
     for r in first_reviews:
-        reviews_by_stars[r[1]].extend([format_word(word) for word in r[0].lower().split() if word not in stopwords])
+        reviews_by_stars[r[1]].extend([word for word in r[0].lower().split() if word not in stopwords])
     for key in reviews_by_stars:
-      fdist = FreqDist(reviews_by_stars[key])
-      print "---------------Most Common " + str(key) + " Star Words --------------"
-      print fdist.most_common(100)
+        fdist = FreqDist(reviews_by_stars[key])
+        print "---------------Most Common " + str(key) + " Star Words --------------"
+        print fdist.most_common(100)
+
+def naive_bayes():
+    # Number of reviews to process
+    num_reviews_to_process = 5200
+    #------------------------------
+
+    stopwords = load_stop_words()
+
+    first_reviews = read_n_reviews(num_reviews_to_process, "yelp_academic_dataset_review.json")
+    reviews_by_stars = {1:[], 2:[], 3:[], 4:[], 5:[]}
+    for r in first_reviews:
+        reviews_by_stars[r[1]].append([word for word in r[0].lower().split() if word not in stopwords])
+
+    #-----Implementing Naive Bayes--------
+    train_set = []   
+    for r in reviews_by_stars[1]:
+       features = {} 
+       for word in r:
+           features[word] = True
+       train_set.append((features, "1"))
+    for r in reviews_by_stars[5]:
+       features = {} 
+       for word in r:
+           features[word] = True
+       train_set.append((features, "5"))
+
+    classifier = nltk.classify.NaiveBayesClassifier.train(train_set)
+    print classifier.show_most_informative_features(200)
+
+def run():
+    naive_bayes()
 
 if __name__ == "__main__":
     run()
