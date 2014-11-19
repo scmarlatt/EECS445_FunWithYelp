@@ -293,7 +293,6 @@ none
 noone
 nor
 normally
-not
 nothing
 novel
 now

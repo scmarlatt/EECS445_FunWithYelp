@@ -3,21 +3,29 @@ import string
 import regex as re
 import nltk
 import nltk.classify
+import sys
 
 def build_sample_file(reviews_json):
     with open("reviews_sample.json","w") as output:
         for r in reviews_json:
             output.write(r) 
 
+def format_review(review, stopwords):
+    review[0].replace(" not ", " not");
+    review[0].replace(" no ", " no");
+    review[0].replace(" didn't ", " didn't");
+    review[0].replace(" can't ", " can't");
+    remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
+    return [[r for r in review[0].translate(remove_punctuation_map).lower().split() if r not in stopwords], review[1]]
+  
+
 def read_n_reviews(n, infile):
+    stopwords = load_stop_words();
     with open(infile) as data:
         reviews_json = [next(data) for i in range(n)]
     reviews = [[json.loads(review)["text"], json.loads(review)["stars"]] for review in reviews_json]
     
-    # Remove punctuation
-    remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
-    reviews_without_punctutation = [[review[0].translate(remove_punctuation_map), review[1]] for review in reviews]
-    return reviews_without_punctutation
+    return [format_review(review, stopwords) for review in reviews]
 
 def format_word(word):
     for suffix in ["tion", "ing", "ed", "ious", "ed", "ies", "ive", "es", "s", "ment", "y", "ate", "able"]:
@@ -33,8 +41,6 @@ def load_stop_words():
 def common_words_by_stars():
     # Number of reviews to process
     num_reviews_to_process = 200000
-    #------------------------------
-
     stopwords = load_stop_words()
 
     first_reviews = read_n_reviews(num_reviews_to_process, "yelp_academic_dataset_review.json")
@@ -47,7 +53,7 @@ def common_words_by_stars():
     }
 
     for r in first_reviews:
-        train_reviews_by_star[r[1]].extend([word for word in r[0].lower().split() if word not in stopwords])
+        train_reviews_by_star[r[1]].extend(r[0])
     for key in train_reviews_by_star:
         fdist = FreqDist(train_reviews_by_star[key])
         print "---------------Most Common " + str(key) + " Star Words --------------"
@@ -55,10 +61,8 @@ def common_words_by_stars():
 
 def naive_bayes():
     # Number of reviews to process
-    num_reviews_to_process = 10000 
+    num_reviews_to_process = 5555 
     #------------------------------
-
-    stopwords = load_stop_words()
 
     first_reviews = read_n_reviews(num_reviews_to_process, "yelp_academic_dataset_review.json")
     train_reviews_by_star = {1:[], 2:[], 3:[], 4:[], 5:[]}
@@ -66,10 +70,10 @@ def naive_bayes():
 
 
     for idx, r in enumerate(first_reviews):
-        if idx % 5 == 0:
-          test_reviews_by_star[r[1]].append([word for word in r[0].lower().split() if word not in stopwords])
+        if idx % 10 == 0:
+          test_reviews_by_star[r[1]].append(r[0])
         else:
-          train_reviews_by_star[r[1]].append([word for word in r[0].lower().split() if word not in stopwords])
+          train_reviews_by_star[r[1]].append(r[0])
 
 
     #-----Implementing Naive Bayes--------
@@ -93,10 +97,25 @@ def naive_bayes():
     print classifier.show_most_informative_features(200)
 
     for i in range(1,6):
-      print classifier.classify_many(test_set[i]).count(str(i))/float(len(test_set[i]))
+      data = classifier.classify_many(test_set[i])
+      print str(i) + " Star"
+      print "------------"
+      print "Accuracy -> " + str(data.count(str(i))/float(len(test_set[i])))
+      print "Average result rating -> " + str(sum([int(d) for d in data])/float(len(data)))
+      print "\n"
+
+    return classifier
 
 def run():
-    naive_bayes()
+    classifier = naive_bayes()
+    while True:
+      review  = sys.stdin.read(1)
+      if review:
+        features = {}
+        for r in review.split():
+          features[r] = True
+        print classifier.classify(features)
+
 
 if __name__ == "__main__":
     run()
