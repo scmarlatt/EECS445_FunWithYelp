@@ -61,7 +61,7 @@ def sorted_features(ufc_val, V, X, y, topN):
 
 def main():
   ufc = {0:"useful", 1:"funny", 2:"cool"}
-  texts, ys = read_data("../yelp_training_set_review.json")
+  texts, ys = read_data("../yelp_academic_dataset_review.json")
   print ",".join(["attrtype", "nfeats", "accuracy", "precision", "recall"])
   for ufc_idx, ufc_val in ufc.items():
     y = ys[:, ufc_idx].A1
