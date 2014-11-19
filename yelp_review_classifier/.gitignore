@@ -1,6 +1,0 @@
-# Ignore mrjob.conf and emr
-/*.pem
-/*.conf
-/*.pdf
-/*.json
-/*.gz
