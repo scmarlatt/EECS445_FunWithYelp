@@ -1,5 +1,5 @@
 
-import json
+mport json
 from pprint import pprint
 import plotly.plotly as py
 from plotly.graph_objs import *
@@ -9,7 +9,9 @@ from plotly.graph_objs import *
 class pairs:
         def __init__(self):
                 self.stars = 0
-                self.total = 0
+                self.length = 0
+
+
 
 def main():
         print 'hi'
@@ -19,7 +21,7 @@ def main():
                 rec = json.loads(line.strip())
                 s = pairs()
                 s.stars = rec["stars"]
-                s.total = rec["votes"]["useful"] + rec["votes"]["cool"] + rec["votes"]["funny"]
+                s.length = len(rec["text"])
                 a.append(s)
         f.close()
 
@@ -32,7 +34,7 @@ def main():
         trace0 = Scatter(
                 x= stars,
                 y= total,
-				mode = 'markers'
+                mode = 'markers'
         )
         data = Data([trace0])
         unique_url = py.plot(data, filename = 'test.png')
@@ -43,3 +45,5 @@ def main():
 
 if __name__ == "__main__":
         main()
+
+
