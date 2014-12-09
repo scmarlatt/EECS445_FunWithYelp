@@ -14,8 +14,8 @@ class pairs:
 
 
 def main():
-        colors = ['rgb(254,229,217)','rgb(252,174,145)','rgb(251, 106, 74)',
-          'rgb(222,45,38)','rgb(165,15,21)']
+        colors = ['rgb(249,18,18)','rgb(18,18,247)','rgb(249, 249, 18)',
+          'rgb(41,249,18)','rgb(241,18,249)']
         print 'hi'
         f = open('reviews_sample.json','rb')
         a = []
@@ -23,6 +23,8 @@ def main():
                 rec = json.loads(line.strip())
                 s = pairs()
                 s.useful = rec["votes"]["useful"]
+                if s.useful == 0:
+                        continue
                 s.stars = rec["stars"]
                 s.length = len(rec["text"])
                 a.append(s)
@@ -43,16 +45,16 @@ def main():
 
 
         for pair in a:
-                if pair.star == 1:
+                if pair.stars == 1:
                         usefulOnes.append(pair.useful)
                         ones.append(pair.length)
-                elif pair.star == 2:
+                elif pair.stars == 2:
                         usefulTwos.append(pair.useful)
                         twos.append(pair.length)
-                elif pair.star == 3:
+                elif pair.stars == 3:
                         usefulThrees.append(pair.useful)
                         threes.append(pair.length)
-                elif pair.star == 4:
+                elif pair.stars == 4:
                         usefulFours.append(pair.useful)
                         fours.append(pair.length)
                 else:
@@ -65,7 +67,7 @@ def main():
         trace1 = Scatter(
                 x= usefulOnes,
                 y= ones,
-                mode = 'markers'
+                mode = 'markers',
                 marker = Marker(
                         color=colors[0]
                 )
@@ -73,7 +75,7 @@ def main():
         trace2 = Scatter(
                 x= usefulTwos,
                 y= twos,
-                mode = 'markers'
+                mode = 'markers',
                 marker = Marker(
                         color=colors[1]
                 )
@@ -81,7 +83,7 @@ def main():
         trace3 = Scatter(
                 x= usefulThrees,
                 y= threes,
-                mode = 'markers'
+                mode = 'markers',
                 marker = Marker(
                         color=colors[2]
                 )
@@ -89,15 +91,15 @@ def main():
         trace4 = Scatter(
                 x= usefulFours,
                 y= fours,
-                mode = 'markers'
+                mode = 'markers',
                 marker = Marker(
                         color=colors[3]
                 )
         )
-          trace5 = Scatter(
+        trace5 = Scatter(
                 x= usefulFives,
                 y= fives,
-                mode = 'markers'
+                mode = 'markers',
                 marker = Marker(
                         color=colors[4]
                 )
