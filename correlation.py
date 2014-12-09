@@ -1,5 +1,5 @@
 
-mport json
+import json
 from pprint import pprint
 import plotly.plotly as py
 from plotly.graph_objs import *
@@ -31,7 +31,8 @@ def main():
 
         trace0 = Scatter(
                 x= stars,
-                y= useful
+                y= useful,
+		mode = 'markers'
         )
         data = Data([trace0])
         unique_url = py.plot(data, filename = 'test.png')
