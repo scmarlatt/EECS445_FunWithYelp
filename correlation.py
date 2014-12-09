@@ -1,4 +1,5 @@
-import json
+
+mport json
 from pprint import pprint
 import plotly.plotly as py
 from plotly.graph_objs import *
@@ -8,7 +9,10 @@ from plotly.graph_objs import *
 class pairs:
         def __init__(self):
                 self.stars = 0
+
                 self.total = 0
+
+
 
 def main():
         print 'hi'
@@ -41,3 +45,5 @@ def main():
 
 if __name__ == "__main__":
         main()
+
+
