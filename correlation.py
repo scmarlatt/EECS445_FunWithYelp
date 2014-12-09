@@ -8,7 +8,7 @@ from plotly.graph_objs import *
 
 class pairs:
         def __init__(self):
-                self.stars = 0
+                self.useful = 0
                 self.length = 0
 
 
@@ -20,20 +20,20 @@ def main():
         for line in f:
                 rec = json.loads(line.strip())
                 s = pairs()
-                s.stars = rec["stars"]
+                s.stars = rec["votes"]["useful"]
                 s.length = len(rec["text"])
                 a.append(s)
         f.close()
 
-        stars = []
-        total = []
+        useful = []
+        lengths = []
         for pair in a:
-                stars.append(pair.stars)
-                total.append(pair.total)
+                useful.append(pair.stars)
+                lengths.append(pair.total)
 
         trace0 = Scatter(
-                x= stars,
-                y= total,
+                x= useful,
+                y= lengths,
                 mode = 'markers'
         )
         data = Data([trace0])
