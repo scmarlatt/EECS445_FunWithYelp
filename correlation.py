@@ -9,7 +9,7 @@ from plotly.graph_objs import *
 class pairs:
         def __init__(self):
                 self.stars = 0
-                self.useful = 0
+                self.total = 0
 
 def main():
         print 'hi'
@@ -19,20 +19,20 @@ def main():
                 rec = json.loads(line.strip())
                 s = pairs()
                 s.stars = rec["stars"]
-                s.useful = rec["votes"]["useful"]
+                s.total = rec["votes"]["useful"] + rec["votes"]["cool"] + rec["votes"]["funny"]
                 a.append(s)
         f.close()
 
         stars = []
-        useful = []
+        total = []
         for pair in a:
                 stars.append(pair.stars)
-                useful.append(pair.useful)
+                total.append(pair.total)
 
         trace0 = Scatter(
                 x= stars,
-                y= useful,
-		mode = 'markers'
+                y= total,
+				mode = 'markers'
         )
         data = Data([trace0])
         unique_url = py.plot(data, filename = 'test.png')
