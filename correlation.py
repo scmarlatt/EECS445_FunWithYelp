@@ -14,6 +14,8 @@ class pairs:
 
 
 def main():
+        colors = ['rgb(254,229,217)','rgb(252,174,145)','rgb(251, 106, 74)',
+          'rgb(222,45,38)','rgb(165,15,21)']
         print 'hi'
         f = open('reviews_sample.json','rb')
         a = []
@@ -26,20 +28,81 @@ def main():
                 a.append(s)
         f.close()
 
-        useful = []
-        lengths = []
-        stars = []
+        usefulOnes = []
+        usefulTwos = []
+        usefulThrees = []
+        usefulFours = []
+        usefulFives = []
+        
+
+        ones = []
+        twos = []
+        threes = []
+        fours = []
+        fives = []
+
+
         for pair in a:
-                useful.append(pair.useful)
-                lengths.append(pair.length)
-                stars.append(pair.stars)
-        trace0 = Scatter(
-                x= useful,
-                y= lengths,
-                z= stars,
+                if pair.star == 1:
+                        usefulOnes.append(pair.useful)
+                        ones.append(pair.length)
+                elif pair.star == 2:
+                        usefulTwos.append(pair.useful)
+                        twos.append(pair.length)
+                elif pair.star == 3:
+                        usefulThrees.append(pair.useful)
+                        threes.append(pair.length)
+                elif pair.star == 4:
+                        usefulFours.append(pair.useful)
+                        fours.append(pair.length)
+                else:
+                        usefulFives.append(pair.useful)
+                        fives.append(pair.length)
+
+
+        
+
+        trace1 = Scatter(
+                x= usefulOnes,
+                y= ones,
                 mode = 'markers'
+                marker = Marker(
+                        color=colors[0]
+                )
         )
-        data = Data([trace0])
+        trace2 = Scatter(
+                x= usefulTwos,
+                y= twos,
+                mode = 'markers'
+                marker = Marker(
+                        color=colors[1]
+                )
+        )
+        trace3 = Scatter(
+                x= usefulThrees,
+                y= threes,
+                mode = 'markers'
+                marker = Marker(
+                        color=colors[2]
+                )
+        )
+        trace4 = Scatter(
+                x= usefulFours,
+                y= fours,
+                mode = 'markers'
+                marker = Marker(
+                        color=colors[3]
+                )
+        )
+          trace5 = Scatter(
+                x= usefulFives,
+                y= fives,
+                mode = 'markers'
+                marker = Marker(
+                        color=colors[4]
+                )
+        )
+        data = Data([trace1, trace2, trace3, trace4, trace5])
         unique_url = py.plot(data, filename = 'test.png')
 
 
