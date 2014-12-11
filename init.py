@@ -5,6 +5,10 @@ import nltk
 import nltk.classify
 import sys
 
+
+def find_ngrams(input_list, n):
+  return zip(*[input_list[i:] for i in range(n)])
+
 def build_sample_file(reviews_json):
     with open("reviews_sample.json","w") as output:
         for r in reviews_json:
@@ -16,13 +20,22 @@ def format_review(review, stopwords):
     review[0].replace(" didn't ", " didn't");
     review[0].replace(" can't ", " can't");
     remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
-    return [[r for r in review[0].translate(remove_punctuation_map).lower().split() if r not in stopwords], review[1]]
-  
+    reviewWords = [r for r in review[0].translate(remove_punctuation_map).lower().split() if r not in stopwords]
+    reviewBigrams = find_ngrams(reviewWords, 2)
+    return [review[1], reviewWords, reviewBigrams]
+
+
 
 def read_n_reviews(n, infile):
     stopwords = load_stop_words();
     with open(infile) as data:
-        reviews_json = [next(data) for i in range(n)]
+        reviews_json = []
+        for i in range(100000):
+          next(data)
+        for i in range(n):
+          reviews_json.append(next(data))
+          for i in range(10):
+            next(data)
     reviews = [[json.loads(review)["text"], json.loads(review)["stars"]] for review in reviews_json]
     
     return [format_review(review, stopwords) for review in reviews]
@@ -61,42 +74,62 @@ def common_words_by_stars():
 
 def naive_bayes():
     # Number of reviews to process
-    num_reviews_to_process = 5555 
+    num_reviews_to_process = 4000
     #------------------------------
 
     first_reviews = read_n_reviews(num_reviews_to_process, "yelp_academic_dataset_review.json")
-    train_reviews_by_star = {1:[], 2:[], 3:[], 4:[], 5:[]}
+
+    train_reviews_by_star_counts = {1:0, 2:0, 3:0, 4:0, 5:0}
     test_reviews_by_star = {1:[], 2:[], 3:[], 4:[], 5:[]}
 
+    train_set = []
+    test_set = {1:[], 2:[], 3:[], 4:[], 5:[]}
 
     for idx, r in enumerate(first_reviews):
-        if idx % 10 == 0:
-          test_reviews_by_star[r[1]].append(r[0])
-        else:
-          train_reviews_by_star[r[1]].append(r[0])
+      if idx % 10 == 0:
+        features = {} 
+        for word in r[1]:
+           features[word] = True
+        for bigram in r[2]:
+            features[bigram] = True  
+        test_set[r[0]].append(features)
+      else:
+        if(train_reviews_by_star_counts[r[0]] < 600):
+          train_reviews_by_star_counts[r[0]] += 1
+          features = {} 
+          for word in r[1]:
+            features[word] = True
+          for bigram in r[2]:
+            features[bigram] = True      
+          train_set.append((features, str(r[0])))
 
 
     #-----Implementing Naive Bayes--------
-    train_set = []
-    for rating, reviews in train_reviews_by_star.iteritems():
-      for r in reviews:
-         features = {} 
-         for word in r:
-             features[word] = True
-         train_set.append((features, str(rating)))
-    
-    test_set = {1:[], 2:[], 3:[], 4:[], 5:[]}
-    for rating, reviews in test_reviews_by_star.iteritems():
-      for r in reviews:
-         features = {} 
-         for word in r:
-             features[word] = True
-         test_set[rating].append((features))
     
     classifier = nltk.classify.NaiveBayesClassifier.train(train_set)
-    print classifier.show_most_informative_features(200)
+    print classifier.show_most_informative_features(100)
+    
+    # ranges = {
+    #     1:[0, .05],
+    #     2:[.05, .4],
+    #     3:[.4, .65],
+    #     4:[.65, .95],
+    #     5:[.95, 1],
+    # }
+    # predictions = {1:[], 2:[], 3:[], 4:[], 5:[]}
+    # for rating in [1,2,3,4,5]:
+    #   pdata = classifier.prob_classify_many(test_set[rating])
+    #   for pdist in pdata:
+    #     prob = pdist.prob('5')
+    #     for k in [1,2,3,4,5]:
+    #       if ranges[k][0] <= prob < ranges[k][1]:
+    #         predictions[rating].append(k)
+    #         break;
+    #   print "Accuracy -> " + str(predictions[rating].count(rating)/float(len(test_set[rating])))
+    #   print "Average result rating -> " + str(sum([int(d) for d in predictions[rating]])/float(len(predictions[rating])))
 
-    for i in range(1,6):
+
+    for i in [1,2,3,4,5]:
       data = classifier.classify_many(test_set[i])
       print str(i) + " Star"
       print "------------"
@@ -108,13 +141,13 @@ def naive_bayes():
 
 def run():
     classifier = naive_bayes()
-    while True:
-      review  = sys.stdin.read(1)
-      if review:
-        features = {}
-        for r in review.split():
-          features[r] = True
-        print classifier.classify(features)
+    # while True:
+    #   review  = sys.stdin.read(1)
+    #   if review:
+    #     features = {}
+    #     for r in review.split():
+    #       features[r] = True
+    #     print classifier.classify(features)
 
 
 if __name__ == "__main__":
