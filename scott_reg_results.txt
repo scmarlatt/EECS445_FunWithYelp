@@ -1,0 +1,19 @@
+499 * 5 Most common words - Trained on 1500 - Tested on 500
+Accuracy: 0.386
+Average error in prediction value: 0.78646665
+
+999 * 5 Most common words - Trained on 1500 - Tested on 500
+Accuracy: 0.4
+Average error in prediction value: 0.76354099
+
+1499 * 5 Most common words - Trained on 1500 - Tested on 500
+Accuracy: 0.428
+Average error in prediction value: 0.73522859
+
+1999 * 5 Most common words - Trained on 1500 - Tested on 500
+Accuracy: 0.416
+Average error in prediction value: 0.73159723
+
+2499 * 5 Most common words - Trained on 1500 - Tested on 500
+Accuracy: 0.406
+Average error in prediction value: 0.73428207
