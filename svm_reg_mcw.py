@@ -41,7 +41,7 @@ def load_stop_words():
 
 def common_words():
 	# Number of reviews to process
-	num_reviews_to_process = 10000
+	num_reviews_to_process = 2000
 	stopwords = load_stop_words()
 	total_review_list_5 = []
 	total_review_list_4 = []
@@ -81,9 +81,9 @@ def common_words():
 
 def run():
 
-	num_reviews = 8000
+	num_reviews = 1500
 	num_features = 6
-	num_test_reviews = 2000
+	num_test_reviews = 500
 
 	#get n by m for training
 	#get n by m for testing
@@ -92,9 +92,9 @@ def run():
 	test_x = np.zeros((num_test_reviews, num_features))
 	test_t = np.zeros((num_test_reviews))
 
-	all_reviews = read_n_reviews(10000, "reviews_10k.json")
-	training_set = all_reviews[0:8000]
-	testing_set = all_reviews[8000:10000]
+	all_reviews = read_n_reviews(2000, "reviews_10k.json")
+	training_set = all_reviews[0:1500]
+	testing_set = all_reviews[1500:2000]
 	most_common_words = common_words()
 	#print most_common_words
 	#iterate over most common words
@@ -130,7 +130,7 @@ def run():
 	#print rounded_predictions
 	num_correct = 0
 	value = 0
-	for i in range(2000):
+	for i in range(500):
 		temp = predictions[i]
 		if temp > 5.0:
 			temp = 5.0
@@ -140,8 +140,8 @@ def run():
 		if rounded_predictions[i] == test_t[i]:
 			num_correct += 1
 
-	print value/2000.0 #avg error
-	print num_correct/2000.0 #accuracy
+	print value/500.0 #avg error
+	print num_correct/500.0 #accuracy
 
 
 if __name__ == "__main__":
