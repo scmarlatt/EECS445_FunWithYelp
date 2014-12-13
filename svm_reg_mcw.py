@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn import datasets, linear_model
+from sklearn import datasets, linear_model, svm
 import nltk
 import json
 import string
@@ -119,7 +119,7 @@ def run():
 
 
 
-	svm_model = svm.SVR(kernel='rbf', C=1e3, gamma=0.1)
+	svm_model = svm.SVR(kernel='poly', degree=6)
 	svm_model.fit(train_x, train_t)
 
 	predictions = svm_model.predict(test_x)
