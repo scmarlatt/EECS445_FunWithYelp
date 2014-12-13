@@ -3,3 +3,5 @@ yelp_academic_dataset_review.json
 *.tar
 /vevn
 
+
+*.pyc
