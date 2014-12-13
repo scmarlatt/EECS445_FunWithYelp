@@ -12,6 +12,7 @@ def main():
   # reviews[1] is a list of all 15000 rfone star reviews
 
 	star_mcw_lists = common_words_by_star.get_common_words(reviews, 50)
+	# star_mcw_list[1] is a list of most common 1 star words
 	for i in range(1,6):
 		print star_mcw_lists[i]
 
