@@ -39,18 +39,13 @@ def parse_bigrams(infile, num_bigrams, star_param):
 
   return bigram_data
 
-def build_features(naive_classifier, review_words, most_common_words):
+def build_features(naive_classifier, review_words, most_common_words, words_one, words_five, bigrams_one, bigrams_five):
 
   # Feature vector format: [count_most_info_one_words, count_most_info_five_words, 
   #                         count_one_bigrams, count_five_bigrams, 
   #                         prob_one, prob_two, prob_three, prob_four, prob_five, 
   #                         count_common_one_words, count_common_two_words, count_common_three_words, 
   #                         count_common_four_words, count_common_five_words]
-
-  words_one = parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "1")
-  words_five = parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "5")
-  bigrams_one = parse_bigrams('features_text/bigrams.txt', 1000, "1")
-  bigrams_five = parse_bigrams('features_text/bigrams.txt', 1000, "5")
  
   one_word_count = 0
   five_word_count = 0

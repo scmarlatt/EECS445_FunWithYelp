@@ -17,10 +17,15 @@ def main():
 	nb_num_train = 500
 	nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)	
 	
+	words_one = extract_features.parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "1")
+	words_five = extract_features.parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "5")
+	bigrams_one = extract_features.parse_bigrams('features_text/bigrams.txt', 1000, "1")
+	bigrams_five = extract_features.parse_bigrams('features_text/bigrams.txt', 1000, "5")
+
 	features = []
 	for i in [1,2,3,4,5]:
 		for review in reviews[i]:
-			features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists[i]))
+			features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists[i], words_one, words_five, bigrams_one, bigrams_five))
 
 	print features[0]
 
