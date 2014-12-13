@@ -37,19 +37,7 @@ def output_prob_dist(classifier, test_set, outfile):
 				probs_output.write("\n")
 				
 
-
-def naive_bayes():
-	reviews = {}
-
-	num_each_review = 13000
-	num_train = 12000
-
-	reviews[1] = read_star_reviews("star_texts/one_stars.txt", num_each_review)
-	reviews[2] = read_star_reviews("star_texts/two_stars.txt", num_each_review)
-	reviews[3] = read_star_reviews("star_texts/three_stars.txt", num_each_review)
-	reviews[4] = read_star_reviews("star_texts/four_stars.txt", num_each_review)
-	reviews[5] = read_star_reviews("star_texts/five_stars.txt", num_each_review)
-
+def create_classifier(reviews, num_train):
 	train_set = []
 	for i in [1,2,3,4,5]:
 		train_set.extend([({word: True for word in review}, i) for review in reviews[i][:num_train]])
@@ -58,14 +46,13 @@ def naive_bayes():
 	test_set = build_test_set(reviews, num_train)
 
 	classifier = nltk.classify.NaiveBayesClassifier.train(train_set)
-	print classifier.show_most_informative_features(100)
 	# print_accuracies(classifier, test_set)
 	output_prob_dist(classifier, test_set, "nbtrain.txt")
 	return classifier
 
 
 def run():
-	classifier = naive_bayes()
+	classifier = create_classifier()
 	while True:
 		review = raw_input('Enter Review: ').split()
 		if review:
