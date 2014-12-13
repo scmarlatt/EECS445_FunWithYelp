@@ -39,7 +39,14 @@ def parse_bigrams(infile, num_bigrams, star_param):
 
   return bigram_data
 
-def build_features(prob_distribution, most_info_words, most_info_bigrams, review_string, most_common_words):
+def build_features(naive_classifier, review_string, most_common_words):
+
+  # Feature vector format: [count_most_info_one_words, count_most_info_five_words, 
+  #                         count_one_bigrams, count_five_bigrams, 
+  #                         prob_one, prob_two, prob_three, prob_four, prob_five, 
+  #                         count_common_one_words, count_common_two_words, count_common_three_words, 
+  #                         count_common_four_words, count_common_five_words]
+
   words_one = parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "1")
   words_five = parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "5")
   bigrams_one = parse_bigrams('features_text/bigrams.txt', 1000, "1")
@@ -50,6 +57,8 @@ def build_features(prob_distribution, most_info_words, most_info_bigrams, review
   one_bigram_count = 0
   five_bigram_count = 0
   review_words = review_string.split()
+
+  feature_matrix = []
   
   for i in range(0, len(review_words)):
     word = review_words[i]
@@ -71,12 +80,44 @@ def build_features(prob_distribution, most_info_words, most_info_bigrams, review
         five_bigram_count += 1
         break
    
-  
+  # Add info about most informative words and bigrams
+  feature_matrix.append(float(one_word_count))
+  feature_matrix.append(float(five_word_count))
+  feature_matrix.append(float(one_bigram_count))
+  feature_matrix.append(float(five_bigram_count))
+
+  # Add info about probabilites
+  probs = naive_classifier.prob_classify(review_words) 
+  feature_matrix.append(probs.prob(1))
+  feature_matrix.append(probs.prob(2))
+  feature_matrix.append(probs.prob(3))
+  feature_matrix.append(probs.prob(4))
+  feature_matrix.append(probs.prob(5))
+
+  one_word_count = 0
+  two_word_count = 0
+  three_word_count = 0
+  four_word_count = 0
+  five_word_count = 0
+  for word in review_words:
+    if word in most_common_words(1):
+      one_word_count += 1
+    if word in most_common_words(2):
+      two_word_count += 1
+    if word in most_common_words(3):
+      three_word_count += 1
+    if word in most_common_words(4):
+      four_word_count += 1
+    if word in most_common_words(5):
+      five_word_count += 1
+
+  feature_matrix.append(float(one_word_count))
+  feature_matrix.append(float(two_word_count))
+  feature_matrix.append(float(three_word_count))
+  feature_matrix.append(float(four_word_count))
+  feature_matrix.append(float(five_word_count))
+
+  return feature_matrix
 
 
 
-def main():
-  parse_most_info('features_text/most_informative_1_to_5.txt', 20, 1)
-  #parse_bigrams('bigrams.txt', 20)
-if __name__ == "__main__":
-  main()
