@@ -32,7 +32,7 @@ def parse_bigrams(infile, num_bigrams, star_param):
     word1 = words[0][3:-2]
     word2 = words[1][2:-2]
     star = words[4]
-    if star == star_param and count_ones < num_bigrams:
+    if star == star_param and count < num_bigrams:
       data = bigrams(word1, word2)
       bigram_data.append(data)
       count += 1
