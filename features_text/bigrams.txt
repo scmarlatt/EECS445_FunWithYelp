@@ -1,0 +1,1000 @@
+(u'highly', u'recommend') = True                5 : 1      =     42.7 : 1.0
+      (u'not', u'worth') = True                1 : 5      =     33.1 : 1.0
+     (u'waste', u'time') = True                1 : 5      =     32.4 : 1.0
+    (u'bad', u'service') = True                1 : 5      =     20.5 : 1.0
+       (u'told', u'not') = True                1 : 5      =     18.2 : 1.0
+   (u'poor', u'service') = True                1 : 5      =     16.0 : 1.0
+      (u'wont', u'back') = True                1 : 5      =     15.8 : 1.0
+    (u'great', u'place') = True                5 : 1      =     15.2 : 1.0
+         (u'1', u'star') = True                1 : 5      =     14.5 : 1.0
+(u'friendly', u'helpful') = True                5 : 1      =     13.4 : 1.0
+    (u'called', u'back') = True                1 : 5      =     13.0 : 1.0
+   (u'didnt', u'bother') = True                1 : 5      =     13.0 : 1.0
+ (u'super', u'friendly') = True                5 : 1      =     12.7 : 1.0
+  (u'place', u'awesome') = True                5 : 1      =     11.6 : 1.0
+ (u'experience', u'not') = True                1 : 5      =     11.5 : 1.0
+     (u'give', u'stars') = True                1 : 5      =     11.5 : 1.0
+(u'horrible', u'experience') = True                1 : 5      =     11.5 : 1.0
+       (u'not', u'good') = True                1 : 5      =     11.2 : 1.0
+     (u'love', u'place') = True                5 : 1      =     11.1 : 1.0
+(u'great', u'experience') = True                5 : 1      =     11.0 : 1.0
+   (u'high', u'quality') = True                5 : 1      =     11.0 : 1.0
+(u'minutes', u'finally') = True                1 : 5      =     10.8 : 1.0
+       (u'food', u'bad') = True                1 : 5      =     10.8 : 1.0
+(u'prices', u'reasonable') = True                5 : 1      =     10.4 : 1.0
+       (u'not', u'make') = True                1 : 5      =     10.0 : 1.0
+   (u'not', u'friendly') = True                1 : 5      =     10.0 : 1.0
+     (u'money', u'back') = True                1 : 5      =     10.0 : 1.0
+      (u'good', u'luck') = True                1 : 5      =     10.0 : 1.0
+     (u'40', u'minutes') = True                1 : 5      =     10.0 : 1.0
+(u'service', u'excellent') = True                5 : 1      =      9.9 : 1.0
+ (u'staff', u'friendly') = True                5 : 1      =      9.4 : 1.0
+         (u'2', u'days') = True                1 : 5      =      9.3 : 1.0
+   (u'good', u'reviews') = True                1 : 5      =      9.3 : 1.0
+      (u'back', u'room') = True                1 : 5      =      9.3 : 1.0
+    (u'eye', u'contact') = True                1 : 5      =      9.3 : 1.0
+ (u'people', u'waiting') = True                1 : 5      =      9.3 : 1.0
+      (u'real', u'deal') = True                5 : 1      =      9.3 : 1.0
+(u'native', u'american') = True                5 : 1      =      9.3 : 1.0
+      (u'salsa', u'bar') = True                5 : 1      =      9.3 : 1.0
+ (u'science', u'center') = True                5 : 1      =      9.3 : 1.0
+(u'pleasantly', u'surprised') = True                5 : 1      =      9.3 : 1.0
+       (u'not', u'care') = True                1 : 5      =      9.2 : 1.0
+      (u'thai', u'food') = True                5 : 1      =      9.1 : 1.0
+     (u'time', u'money') = True                1 : 5      =      8.7 : 1.0
+   (u'comfort', u'food') = True                5 : 1      =      8.7 : 1.0
+  (u'staff', u'helpful') = True                5 : 1      =      8.7 : 1.0
+ (u'care', u'customers') = True                1 : 5      =      8.6 : 1.0
+      (u'place', u'bad') = True                1 : 5      =      8.6 : 1.0
+ (u'friend', u'ordered') = True                1 : 5      =      8.6 : 1.0
+    (u'fried', u'steak') = True                1 : 5      =      8.6 : 1.0
+      (u'sat', u'table') = True                1 : 5      =      8.6 : 1.0
+(u'highly', u'recommended') = True                5 : 1      =      8.4 : 1.0
+     (u'great', u'time') = True                5 : 1      =      8.4 : 1.0
+(u'consistently', u'good') = True                5 : 1      =      8.1 : 1.0
+(u'excellent', u'service') = True                5 : 1      =      8.1 : 1.0
+     (u'food', u'great') = True                5 : 1      =      8.1 : 1.0
+     (u'10', u'minutes') = True                1 : 5      =      7.9 : 1.0
+     (u'didnt', u'give') = True                1 : 5      =      7.8 : 1.0
+    (u'didnt', u'taste') = True                1 : 5      =      7.8 : 1.0
+(u'wouldnt', u'recommend') = True                1 : 5      =      7.8 : 1.0
+     (u'food', u'bland') = True                1 : 5      =      7.8 : 1.0
+    (u'decided', u'not') = True                1 : 5      =      7.8 : 1.0
+    (u'waste', u'money') = True                1 : 5      =      7.8 : 1.0
+     (u'smoky', u'jons') = True                5 : 1      =      7.5 : 1.0
+   (u'service', u'fast') = True                5 : 1      =      7.5 : 1.0
+(u'helpful', u'friendly') = True                5 : 1      =      7.5 : 1.0
+(u'outdoor', u'seating') = True                5 : 1      =      7.5 : 1.0
+     (u'blue', u'plate') = True                5 : 1      =      7.5 : 1.0
+ (u'wine', u'selection') = True                5 : 1      =      7.5 : 1.0
+  (u'perfect', u'place') = True                5 : 1      =      7.5 : 1.0
+   (u'cheese', u'curds') = True                5 : 1      =      7.5 : 1.0
+        (u'car', u'not') = True                1 : 5      =      7.4 : 1.0
+  (u'asked', u'manager') = True                1 : 5      =      7.1 : 1.0
+      (u'not', u'happy') = True                1 : 5      =      7.1 : 1.0
+    (u'give', u'chance') = True                1 : 5      =      7.1 : 1.0
+       (u'eat', u'food') = True                1 : 5      =      7.1 : 1.0
+   (u'minutes', u'late') = True                1 : 5      =      7.1 : 1.0
+     (u'half', u'price') = True                1 : 5      =      7.1 : 1.0
+      (u'great', u'job') = True                5 : 1      =      7.0 : 1.0
+   (u'madison', u'area') = True                5 : 1      =      7.0 : 1.0
+   (u'food', u'amazing') = True                5 : 1      =      7.0 : 1.0
+    (u'carne', u'asada') = True                5 : 1      =      6.9 : 1.0
+        (u'ive', u'bad') = True                5 : 1      =      6.9 : 1.0
+    (u'gluten', u'free') = True                5 : 1      =      6.9 : 1.0
+(u'reasonable', u'price') = True                5 : 1      =      6.9 : 1.0
+(u'not', u'disappointed') = True                5 : 1      =      6.9 : 1.0
+      (u'beer', u'wine') = True                5 : 1      =      6.9 : 1.0
+     (u'time', u'great') = True                5 : 1      =      6.9 : 1.0
+      (u'5', u'minutes') = True                1 : 5      =      6.8 : 1.0
+ (u'food', u'delicious') = True                5 : 1      =      6.6 : 1.0
+     (u'15', u'minutes') = True                1 : 5      =      6.5 : 1.0
+     (u'phone', u'call') = True                1 : 5      =      6.5 : 1.0
+      (u'dont', u'care') = True                1 : 5      =      6.5 : 1.0
+        (u'not', u'pay') = True                1 : 5      =      6.5 : 1.0
+    (u'amount', u'time') = True                1 : 5      =      6.3 : 1.0
+      (u'gift', u'card') = True                1 : 5      =      6.3 : 1.0
+     (u'not', u'coming') = True                1 : 5      =      6.3 : 1.0
+ (u'food', u'delivered') = True                1 : 5      =      6.3 : 1.0
+        (u'15', u'mins') = True                1 : 5      =      6.3 : 1.0
+      (u'time', u'food') = True                1 : 5      =      6.3 : 1.0
+    (u'phone', u'calls') = True                1 : 5      =      6.3 : 1.0
+   (u'service', u'dont') = True                1 : 5      =      6.3 : 1.0
+(u'im', u'disappointed') = True                1 : 5      =      6.3 : 1.0
+     (u'dont', u'place') = True                1 : 5      =      6.3 : 1.0
+       (u'pay', u'back') = True                1 : 5      =      6.3 : 1.0
+     (u'food', u'taste') = True                1 : 5      =      6.3 : 1.0
+   (u'didnt', u'notice') = True                1 : 5      =      6.3 : 1.0
+      (u'not', u'clean') = True                1 : 5      =      6.3 : 1.0
+ (u'couple', u'minutes') = True                1 : 5      =      6.3 : 1.0
+    (u'water', u'spots') = True                1 : 5      =      6.3 : 1.0
+   (u'food', u'finally') = True                1 : 5      =      6.3 : 1.0
+   (u'amazing', u'food') = True                5 : 1      =      6.3 : 1.0
+   (u'french', u'toast') = True                5 : 1      =      6.3 : 1.0
+   (u'food', u'madison') = True                5 : 1      =      6.3 : 1.0
+    (u'wine', u'cheese') = True                5 : 1      =      6.3 : 1.0
+    (u'ive', u'madison') = True                5 : 1      =      6.3 : 1.0
+      (u'top', u'notch') = True                5 : 1      =      6.3 : 1.0
+       (u'big', u'unit') = True                5 : 1      =      6.3 : 1.0
+ (u'friendly', u'staff') = True                5 : 1      =      6.3 : 1.0
+     (u'didnt', u'care') = True                1 : 5      =      6.2 : 1.0
+       (u'not', u'time') = True                1 : 5      =      6.0 : 1.0
+     (u'20', u'minutes') = True                1 : 5      =      6.0 : 1.0
+    (u'place', u'great') = True                5 : 1      =      5.9 : 1.0
+ (u'favorite', u'place') = True                5 : 1      =      5.9 : 1.0
+(u'favorite', u'places') = True                5 : 1      =      5.9 : 1.0
+    (u'service', u'not') = True                1 : 5      =      5.9 : 1.0
+      (u'wait', u'back') = True                5 : 1      =      5.9 : 1.0
+     (u'45', u'minutes') = True                1 : 5      =      5.7 : 1.0
+  (u'rositas', u'place') = True                5 : 1      =      5.7 : 1.0
+(u'chicken', u'enchiladas') = True                5 : 1      =      5.7 : 1.0
+     (u'place', u'love') = True                5 : 1      =      5.7 : 1.0
+    (u'fresh', u'tasty') = True                5 : 1      =      5.7 : 1.0
+  (u'waited', u'waited') = True                1 : 5      =      5.6 : 1.0
+   (u'minutes', u'food') = True                1 : 5      =      5.6 : 1.0
+      (u'told', u'dont') = True                1 : 5      =      5.6 : 1.0
+    (u'giving', u'star') = True                1 : 5      =      5.6 : 1.0
+     (u'food', u'order') = True                1 : 5      =      5.6 : 1.0
+    (u'minutes', u'not') = True                1 : 5      =      5.6 : 1.0
+ (u'sesame', u'chicken') = True                1 : 5      =      5.6 : 1.0
+  (u'manager', u'asked') = True                1 : 5      =      5.6 : 1.0
+   (u'italian', u'beef') = True                1 : 5      =      5.6 : 1.0
+     (u'make', u'sense') = True                1 : 5      =      5.6 : 1.0
+  (u'indian', u'school') = True                1 : 5      =      5.6 : 1.0
+(u'terrible', u'experience') = True                1 : 5      =      5.6 : 1.0
+    (u'guy', u'counter') = True                1 : 5      =      5.6 : 1.0
+     (u'review', u'not') = True                1 : 5      =      5.6 : 1.0
+     (u'loud', u'music') = True                1 : 5      =      5.6 : 1.0
+(u'general', u'manager') = True                1 : 5      =      5.6 : 1.0
+      (u'not', u'fault') = True                1 : 5      =      5.6 : 1.0
+(u'dont', u'understand') = True                1 : 5      =      5.6 : 1.0
+      (u'hour', u'half') = True                1 : 5      =      5.6 : 1.0
+      (u'young', u'man') = True                1 : 5      =      5.6 : 1.0
+    (u'drink', u'order') = True                1 : 5      =      5.6 : 1.0
+(u'understand', u'people') = True                1 : 5      =      5.6 : 1.0
+     (u'wasnt', u'good') = True                1 : 5      =      5.6 : 1.0
+   (u'food', u'network') = True                1 : 5      =      5.6 : 1.0
+    (u'service', u'ive') = True                1 : 5      =      5.6 : 1.0
+  (u'service', u'great') = True                5 : 1      =      5.4 : 1.0
+    (u'credit', u'card') = True                1 : 5      =      5.3 : 1.0
+   (u'great', u'people') = True                5 : 1      =      5.2 : 1.0
+(u'great', u'atmosphere') = True                5 : 1      =      5.2 : 1.0
+     (u'front', u'door') = True                1 : 5      =      5.1 : 1.0
+     (u'car', u'washed') = True                1 : 5      =      5.1 : 1.0
+  (u'minutes', u'order') = True                1 : 5      =      5.1 : 1.0
+     (u'told', u'didnt') = True                1 : 5      =      5.1 : 1.0
+     (u'25', u'minutes') = True                1 : 5      =      5.1 : 1.0
+     (u'great', u'food') = True                5 : 1      =      5.1 : 1.0
+     (u'oil', u'change') = True                1 : 5      =      5.1 : 1.0
+  (u'super', u'helpful') = True                5 : 1      =      5.1 : 1.0
+    (u'corned', u'beef') = True                5 : 1      =      5.1 : 1.0
+       (u'bad', u'meal') = True                5 : 1      =      5.1 : 1.0
+(u'convention', u'center') = True                5 : 1      =      5.1 : 1.0
+    (u'worth', u'drive') = True                5 : 1      =      5.1 : 1.0
+  (u'curry', u'chicken') = True                5 : 1      =      5.1 : 1.0
+   (u'heard', u'museum') = True                5 : 1      =      5.1 : 1.0
+   (u'food', u'phoenix') = True                5 : 1      =      5.1 : 1.0
+     (u'worth', u'wait') = True                5 : 1      =      5.1 : 1.0
+  (u'locally', u'owned') = True                5 : 1      =      5.1 : 1.0
+  (u'awesome', u'place') = True                5 : 1      =      5.1 : 1.0
+     (u'good', u'staff') = True                5 : 1      =      5.1 : 1.0
+     (u'place', u'stop') = True                5 : 1      =      5.1 : 1.0
+(u'arizona', u'science') = True                5 : 1      =      5.1 : 1.0
+    (u'great', u'staff') = True                5 : 1      =      5.1 : 1.0
+     (u'art', u'museum') = True                5 : 1      =      5.1 : 1.0
+(u'friendly', u'knowledgeable') = True                5 : 1      =      5.1 : 1.0
+     (u'ive', u'coming') = True                5 : 1      =      5.1 : 1.0
+      (u'ive', u'times') = True                5 : 1      =      5.1 : 1.0
+(u'perfectly', u'cooked') = True                5 : 1      =      5.1 : 1.0
+      (u'fun', u'place') = True                5 : 1      =      5.1 : 1.0
+       (u'food', u'not') = True                1 : 5      =      5.1 : 1.0
+     (u'dont', u'waste') = True                1 : 5      =      5.0 : 1.0
+     (u'people', u'not') = True                1 : 5      =      4.9 : 1.0
+    (u'people', u'dont') = True                1 : 5      =      4.8 : 1.0
+ (u'chicken', u'tasted') = True                1 : 5      =      4.8 : 1.0
+  (u'not', u'expecting') = True                1 : 5      =      4.8 : 1.0
+      (u'back', u'give') = True                1 : 5      =      4.8 : 1.0
+  (u'told', u'waitress') = True                1 : 5      =      4.8 : 1.0
+(u'insurance', u'company') = True                1 : 5      =      4.8 : 1.0
+       (u'ill', u'make') = True                1 : 5      =      4.8 : 1.0
+   (u'enjoyed', u'food') = True                1 : 5      =      4.8 : 1.0
+   (u'closing', u'time') = True                1 : 5      =      4.8 : 1.0
+    (u'ready', u'order') = True                1 : 5      =      4.8 : 1.0
+     (u'stay', u'place') = True                1 : 5      =      4.8 : 1.0
+    (u'chicken', u'dry') = True                1 : 5      =      4.8 : 1.0
+       (u'work', u'not') = True                1 : 5      =      4.8 : 1.0
+     (u'inside', u'not') = True                1 : 5      =      4.8 : 1.0
+(u'service', u'experience') = True                1 : 5      =      4.8 : 1.0
+       (u'back', u'not') = True                1 : 5      =      4.8 : 1.0
+      (u'food', u'isnt') = True                1 : 5      =      4.8 : 1.0
+   (u'waiting', u'line') = True                1 : 5      =      4.8 : 1.0
+(u'quality', u'service') = True                1 : 5      =      4.8 : 1.0
+         (u'20', u'min') = True                1 : 5      =      4.8 : 1.0
+       (u'feel', u'bad') = True                1 : 5      =      4.8 : 1.0
+    (u'waited', u'long') = True                1 : 5      =      4.8 : 1.0
+     (u'thing', u'good') = True                1 : 5      =      4.8 : 1.0
+    (u'entire', u'life') = True                1 : 5      =      4.8 : 1.0
+    (u'prices', u'high') = True                1 : 5      =      4.8 : 1.0
+(u'back', u'restaurant') = True                1 : 5      =      4.8 : 1.0
+      (u'eat', u'place') = True                1 : 5      =      4.8 : 1.0
+       (u'wash', u'not') = True                1 : 5      =      4.8 : 1.0
+      (u'pay', u'extra') = True                1 : 5      =      4.8 : 1.0
+         (u'pay', u'10') = True                1 : 5      =      4.8 : 1.0
+     (u'back', u'store') = True                1 : 5      =      4.8 : 1.0
+  (u'minutes', u'didnt') = True                1 : 5      =      4.8 : 1.0
+   (u'make', u'matters') = True                1 : 5      =      4.8 : 1.0
+     (u'left', u'place') = True                1 : 5      =      4.8 : 1.0
+ (u'ranch', u'dressing') = True                1 : 5      =      4.8 : 1.0
+    (u'burger', u'king') = True                1 : 5      =      4.8 : 1.0
+   (u'girl', u'counter') = True                1 : 5      =      4.8 : 1.0
+      (u'taste', u'not') = True                1 : 5      =      4.8 : 1.0
+  (u'kitchen', u'staff') = True                1 : 5      =      4.8 : 1.0
+      (u'not', u'bring') = True                1 : 5      =      4.8 : 1.0
+  (u'front', u'counter') = True                1 : 5      =      4.8 : 1.0
+     (u'super', u'nice') = True                5 : 1      =      4.8 : 1.0
+       (u'not', u'work') = True                1 : 5      =      4.7 : 1.0
+       (u'bad', u'food') = True                1 : 5      =      4.7 : 1.0
+      (u'not', u'order') = True                1 : 5      =      4.7 : 1.0
+   (u'people', u'place') = True                1 : 5      =      4.7 : 1.0
+     (u'food', u'wasnt') = True                1 : 5      =      4.7 : 1.0
+  (u'mediocre', u'food') = True                1 : 5      =      4.7 : 1.0
+     (u'30', u'minutes') = True                1 : 5      =      4.7 : 1.0
+  (u'great', u'service') = True                5 : 1      =      4.6 : 1.0
+(u'absolutely', u'delicious') = True                5 : 1      =      4.5 : 1.0
+  (u'visit', u'phoenix') = True                5 : 1      =      4.5 : 1.0
+(u'fantastic', u'service') = True                5 : 1      =      4.5 : 1.0
+(u'white', u'chocolate') = True                5 : 1      =      4.5 : 1.0
+(u'answered', u'questions') = True                5 : 1      =      4.5 : 1.0
+  (u'great', u'variety') = True                5 : 1      =      4.5 : 1.0
+    (u'chase', u'field') = True                5 : 1      =      4.5 : 1.0
+   (u'bloody', u'marys') = True                5 : 1      =      4.5 : 1.0
+    (u'prices', u'good') = True                5 : 1      =      4.5 : 1.0
+   (u'chicken', u'bowl') = True                5 : 1      =      4.5 : 1.0
+    (u'great', u'lunch') = True                5 : 1      =      4.5 : 1.0
+(u'couldnt', u'happier') = True                5 : 1      =      4.5 : 1.0
+       (u'im', u'happy') = True                5 : 1      =      4.5 : 1.0
+        (u'im', u'glad') = True                5 : 1      =      4.5 : 1.0
+     (u'brown', u'rice') = True                5 : 1      =      4.5 : 1.0
+  (u'fresh', u'veggies') = True                5 : 1      =      4.5 : 1.0
+ (u'good', u'selection') = True                5 : 1      =      4.5 : 1.0
+     (u'good', u'great') = True                5 : 1      =      4.5 : 1.0
+  (u'food', u'friendly') = True                5 : 1      =      4.5 : 1.0
+      (u'food', u'love') = True                5 : 1      =      4.5 : 1.0
+     (u'made', u'fresh') = True                5 : 1      =      4.5 : 1.0
+      (u'good', u'back') = True                5 : 1      =      4.5 : 1.0
+(u'great', u'selection') = True                5 : 1      =      4.5 : 1.0
+   (u'phone', u'number') = True                1 : 5      =      4.3 : 1.0
+        (u'2', u'weeks') = True                1 : 5      =      4.3 : 1.0
+ (u'restaurant', u'not') = True                1 : 5      =      4.3 : 1.0
+   (u'wild', u'thaiger') = True                5 : 1      =      4.3 : 1.0
+ (u'experience', u'ive') = True                1 : 5      =      4.2 : 1.0
+     (u'cell', u'phone') = True                1 : 5      =      4.2 : 1.0
+       (u'nice', u'guy') = True                1 : 5      =      4.2 : 1.0
+    (u'not', u'working') = True                1 : 5      =      4.2 : 1.0
+(u'customer', u'service') = True                1 : 5      =      4.1 : 1.0
+      (u'damn', u'good') = True                5 : 1      =      4.1 : 1.0
+   (u'waitress', u'not') = True                1 : 5      =      4.1 : 1.0
+      (u'lot', u'money') = True                1 : 5      =      4.1 : 1.0
+            (u'2', u'3') = True                1 : 5      =      4.1 : 1.0
+   (u'ave', u'location') = True                1 : 5      =      4.1 : 1.0
+    (u'friends', u'not') = True                1 : 5      =      4.1 : 1.0
+     (u'table', u'back') = True                1 : 5      =      4.1 : 1.0
+      (u'owner', u'not') = True                1 : 5      =      4.1 : 1.0
+      (u'door', u'open') = True                1 : 5      =      4.1 : 1.0
+    (u'bbq', u'chicken') = True                1 : 5      =      4.1 : 1.0
+    (u'cab', u'company') = True                1 : 5      =      4.1 : 1.0
+    (u'dont', u'bother') = True                1 : 5      =      4.1 : 1.0
+    (u'taking', u'long') = True                1 : 5      =      4.1 : 1.0
+      (u'dont', u'give') = True                1 : 5      =      4.1 : 1.0
+    (u'not', u'suggest') = True                1 : 5      =      4.1 : 1.0
+  (u'not', u'surprised') = True                1 : 5      =      4.1 : 1.0
+  (u'matters', u'worse') = True                1 : 5      =      4.1 : 1.0
+        (u'not', u'ill') = True                1 : 5      =      4.1 : 1.0
+      (u'save', u'time') = True                1 : 5      =      4.1 : 1.0
+     (u'lunch', u'menu') = True                1 : 5      =      4.1 : 1.0
+(u'food', u'overpriced') = True                1 : 5      =      4.1 : 1.0
+      (u'hot', u'water') = True                1 : 5      =      4.1 : 1.0
+      (u'back', u'work') = True                1 : 5      =      4.1 : 1.0
+(u'saturday', u'afternoon') = True                1 : 5      =      4.1 : 1.0
+  (u'based', u'reviews') = True                1 : 5      =      4.1 : 1.0
+        (u'not', u'eat') = True                1 : 5      =      4.1 : 1.0
+      (u'wrong', u'not') = True                1 : 5      =      4.1 : 1.0
+     (u'not', u'person') = True                1 : 5      =      4.1 : 1.0
+   (u'wanted', u'order') = True                1 : 5      =      4.1 : 1.0
+       (u'not', u'type') = True                1 : 5      =      4.1 : 1.0
+     (u'30', u'seconds') = True                1 : 5      =      4.1 : 1.0
+(u'italian', u'restaurants') = True                1 : 5      =      4.1 : 1.0
+      (u'give', u'star') = True                1 : 5      =      4.1 : 1.0
+     (u'full', u'price') = True                1 : 5      =      4.1 : 1.0
+     (u'back', u'order') = True                1 : 5      =      4.1 : 1.0
+      (u'not', u'gonna') = True                1 : 5      =      4.1 : 1.0
+  (u'bar', u'bartender') = True                1 : 5      =      4.1 : 1.0
+      (u'waited', u'45') = True                1 : 5      =      4.1 : 1.0
+       (u'nope', u'not') = True                1 : 5      =      4.1 : 1.0
+      (u'hour', u'time') = True                1 : 5      =      4.1 : 1.0
+(u'gift', u'certificate') = True                1 : 5      =      4.1 : 1.0
+ (u'people', u'arrived') = True                1 : 5      =      4.1 : 1.0
+        (u'10', u'days') = True                1 : 5      =      4.1 : 1.0
+        (u'5', u'stars') = True                5 : 1      =      4.1 : 1.0
+(u'friendly', u'service') = True                5 : 1      =      4.0 : 1.0
+    (u'honey', u'bears') = True                1 : 5      =      4.0 : 1.0
+(u'reasonable', u'prices') = True                5 : 1      =      4.0 : 1.0
+      (u'not', u'place') = True                1 : 5      =      4.0 : 1.0
+   (u'cheese', u'steak') = True                5 : 1      =      3.9 : 1.0
+   (u'auto', u'service') = True                5 : 1      =      3.9 : 1.0
+  (u'san', u'francisco') = True                5 : 1      =      3.9 : 1.0
+   (u'tartar', u'sauce') = True                5 : 1      =      3.9 : 1.0
+  (u'dipping', u'sauce') = True                5 : 1      =      3.9 : 1.0
+  (u'early', u'morning') = True                5 : 1      =      3.9 : 1.0
+      (u'vin', u'santo') = True                5 : 1      =      3.9 : 1.0
+        (u'eat', u'day') = True                5 : 1      =      3.9 : 1.0
+   (u'portion', u'size') = True                5 : 1      =      3.9 : 1.0
+      (u'fried', u'egg') = True                5 : 1      =      3.9 : 1.0
+    (u'people', u'nice') = True                5 : 1      =      3.9 : 1.0
+    (u'cream', u'sauce') = True                5 : 1      =      3.9 : 1.0
+   (u'back', u'madison') = True                5 : 1      =      3.9 : 1.0
+        (u'im', u'love') = True                5 : 1      =      3.9 : 1.0
+     (u'great', u'care') = True                5 : 1      =      3.9 : 1.0
+    (u'small', u'place') = True                5 : 1      =      3.9 : 1.0
+ (u'quick', u'friendly') = True                5 : 1      =      3.9 : 1.0
+     (u'sauce', u'good') = True                5 : 1      =      3.9 : 1.0
+(u'delicious', u'staff') = True                5 : 1      =      3.9 : 1.0
+    (u'spicy', u'salsa') = True                5 : 1      =      3.9 : 1.0
+    (u'ten', u'minutes') = True                1 : 5      =      3.8 : 1.0
+       (u'fish', u'fry') = True                5 : 1      =      3.8 : 1.0
+        (u'3', u'times') = True                1 : 5      =      3.8 : 1.0
+      (u'food', u'told') = True                1 : 5      =      3.8 : 1.0
+   (u'wanted', u'place') = True                1 : 5      =      3.8 : 1.0
+       (u'put', u'back') = True                1 : 5      =      3.8 : 1.0
+    (u'didnt', u'order') = True                1 : 5      =      3.8 : 1.0
+     (u'make', u'money') = True                1 : 5      =      3.8 : 1.0
+     (u'times', u'time') = True                1 : 5      =      3.8 : 1.0
+(u'made', u'appointment') = True                1 : 5      =      3.8 : 1.0
+     (u'not', u'expect') = True                1 : 5      =      3.8 : 1.0
+(u'high', u'expectations') = True                1 : 5      =      3.8 : 1.0
+    (u'order', u'wrong') = True                1 : 5      =      3.8 : 1.0
+  (u'peanut', u'butter') = True                5 : 1      =      3.8 : 1.0
+     (u'diner', u'food') = True                5 : 1      =      3.8 : 1.0
+(u'teriyaki', u'chicken') = True                5 : 1      =      3.8 : 1.0
+(u'enchilada', u'style') = True                5 : 1      =      3.8 : 1.0
+   (u'ordered', u'food') = True                1 : 5      =      3.7 : 1.0
+    (u'story', u'short') = True                1 : 5      =      3.7 : 1.0
+       (u'dont', u'eat') = True                1 : 5      =      3.7 : 1.0
+     (u'long', u'story') = True                1 : 5      =      3.7 : 1.0
+(u'ordered', u'chicken') = True                1 : 5      =      3.6 : 1.0
+    (u'bottom', u'line') = True                1 : 5      =      3.6 : 1.0
+        (u'time', u'im') = True                5 : 1      =      3.5 : 1.0
+     (u'mac', u'cheese') = True                5 : 1      =      3.5 : 1.0
+    (u'place', u'wasnt') = True                5 : 1      =      3.4 : 1.0
+ (u'airways', u'center') = True                5 : 1      =      3.4 : 1.0
+(u'favorite', u'restaurant') = True                5 : 1      =      3.4 : 1.0
+    (u'times', u'month') = True                5 : 1      =      3.4 : 1.0
+ (u'delicious', u'food') = True                5 : 1      =      3.4 : 1.0
+     (u'food', u'fresh') = True                5 : 1      =      3.4 : 1.0
+  (u'fast', u'friendly') = True                5 : 1      =      3.4 : 1.0
+      (u'love', u'food') = True                5 : 1      =      3.4 : 1.0
+     (u'great', u'deal') = True                5 : 1      =      3.4 : 1.0
+     (u'sign', u'front') = True                1 : 5      =      3.3 : 1.0
+        (u'time', u'id') = True                1 : 5      =      3.3 : 1.0
+(u'recommend', u'restaurant') = True                1 : 5      =      3.3 : 1.0
+    (u'not', u'typical') = True                1 : 5      =      3.3 : 1.0
+     (u'time', u'frame') = True                1 : 5      =      3.3 : 1.0
+ (u'learned', u'lesson') = True                1 : 5      =      3.3 : 1.0
+   (u'not', u'pleasant') = True                1 : 5      =      3.3 : 1.0
+      (u'boy', u'wrong') = True                1 : 5      =      3.3 : 1.0
+      (u'dont', u'back') = True                1 : 5      =      3.3 : 1.0
+    (u'not', u'wanting') = True                1 : 5      =      3.3 : 1.0
+      (u'good', u'find') = True                1 : 5      =      3.3 : 1.0
+   (u'time', u'friends') = True                1 : 5      =      3.3 : 1.0
+      (u'not', u'serve') = True                1 : 5      =      3.3 : 1.0
+     (u'debit', u'card') = True                1 : 5      =      3.3 : 1.0
+       (u'put', u'hold') = True                1 : 5      =      3.3 : 1.0
+       (u'not', u'pass') = True                1 : 5      =      3.3 : 1.0
+   (u'not', u'returned') = True                1 : 5      =      3.3 : 1.0
+ (u'crappy', u'service') = True                1 : 5      =      3.3 : 1.0
+      (u'food', u'wont') = True                1 : 5      =      3.3 : 1.0
+         (u'20', u'tip') = True                1 : 5      =      3.3 : 1.0
+    (u'wouldnt', u'eat') = True                1 : 5      =      3.3 : 1.0
+        (u'sit', u'eat') = True                1 : 5      =      3.3 : 1.0
+     (u'call', u'phone') = True                1 : 5      =      3.3 : 1.0
+      (u'beef', u'taco') = True                1 : 5      =      3.3 : 1.0
+  (u'minutes', u'drink') = True                1 : 5      =      3.3 : 1.0
+      (u'past', u'time') = True                1 : 5      =      3.3 : 1.0
+    (u'salsa', u'salsa') = True                1 : 5      =      3.3 : 1.0
+   (u'attempt', u'make') = True                1 : 5      =      3.3 : 1.0
+   (u'walked', u'place') = True                1 : 5      =      3.3 : 1.0
+         (u'5', u'mins') = True                1 : 5      =      3.3 : 1.0
+       (u'sit', u'wait') = True                1 : 5      =      3.3 : 1.0
+ (u'couldnt', u'finish') = True                1 : 5      =      3.3 : 1.0
+      (u'2', u'minutes') = True                1 : 5      =      3.3 : 1.0
+     (u'not', u'paying') = True                1 : 5      =      3.3 : 1.0
+     (u'asked', u'food') = True                1 : 5      =      3.3 : 1.0
+   (u'left', u'feeling') = True                1 : 5      =      3.3 : 1.0
+(u'called', u'customer') = True                1 : 5      =      3.3 : 1.0
+   (u'wanted', u'drink') = True                1 : 5      =      3.3 : 1.0
+      (u'mens', u'room') = True                1 : 5      =      3.3 : 1.0
+      (u'wont', u'give') = True                1 : 5      =      3.3 : 1.0
+(u'local', u'businesses') = True                1 : 5      =      3.3 : 1.0
+  (u'waitress', u'nice') = True                1 : 5      =      3.3 : 1.0
+     (u'gave', u'place') = True                1 : 5      =      3.3 : 1.0
+     (u'places', u'not') = True                1 : 5      =      3.3 : 1.0
+    (u'decent', u'food') = True                1 : 5      =      3.3 : 1.0
+       (u'not', u'cool') = True                1 : 5      =      3.3 : 1.0
+    (u'give', u'people') = True                1 : 5      =      3.3 : 1.0
+  (u'stars', u'service') = True                1 : 5      =      3.3 : 1.0
+(u'iceberg', u'lettuce') = True                1 : 5      =      3.3 : 1.0
+ (u'food', u'expensive') = True                1 : 5      =      3.3 : 1.0
+     (u'back', u'hotel') = True                1 : 5      =      3.3 : 1.0
+       (u'care', u'not') = True                1 : 5      =      3.3 : 1.0
+ (u'ordered', u'cheese') = True                1 : 5      =      3.3 : 1.0
+       (u'not', u'real') = True                1 : 5      =      3.3 : 1.0
+     (u'side', u'didnt') = True                1 : 5      =      3.3 : 1.0
+  (u'chinese', u'place') = True                1 : 5      =      3.3 : 1.0
+     (u'7th', u'street') = True                1 : 5      =      3.3 : 1.0
+     (u'voice', u'mail') = True                1 : 5      =      3.3 : 1.0
+      (u'make', u'back') = True                1 : 5      =      3.3 : 1.0
+     (u'young', u'lady') = True                1 : 5      =      3.3 : 1.0
+       (u'not', u'felt') = True                1 : 5      =      3.3 : 1.0
+     (u'time', u'leave') = True                1 : 5      =      3.3 : 1.0
+      (u'told', u'wife') = True                1 : 5      =      3.3 : 1.0
+     (u'didnt', u'work') = True                1 : 5      =      3.3 : 1.0
+ (u'absolutely', u'not') = True                1 : 5      =      3.3 : 1.0
+     (u'waiting', u'10') = True                1 : 5      =      3.3 : 1.0
+   (u'told', u'wouldnt') = True                1 : 5      =      3.3 : 1.0
+    (u'indian', u'food') = True                1 : 5      =      3.3 : 1.0
+   (u'wouldnt', u'back') = True                1 : 5      =      3.3 : 1.0
+     (u'not', u'packed') = True                1 : 5      =      3.3 : 1.0
+    (u'pizza', u'crust') = True                1 : 5      =      3.3 : 1.0
+  (u'tortilla', u'soup') = True                1 : 5      =      3.3 : 1.0
+     (u'save', u'money') = True                1 : 5      =      3.3 : 1.0
+   (u'small', u'pieces') = True                1 : 5      =      3.3 : 1.0
+    (u'back', u'inside') = True                1 : 5      =      3.3 : 1.0
+     (u'rude', u'staff') = True                1 : 5      =      3.3 : 1.0
+      (u'time', u'wont') = True                1 : 5      =      3.3 : 1.0
+      (u'good', u'news') = True                1 : 5      =      3.3 : 1.0
+  (u'plenty', u'places') = True                1 : 5      =      3.3 : 1.0
+        (u'end', u'day') = True                1 : 5      =      3.3 : 1.0
+(u'disappointing', u'experience') = True                1 : 5      =      3.3 : 1.0
+      (u'make', u'work') = True                1 : 5      =      3.3 : 1.0
+(u'make', u'reservation') = True                1 : 5      =      3.3 : 1.0
+     (u'asked', u'find') = True                1 : 5      =      3.3 : 1.0
+       (u'kung', u'pao') = True                1 : 5      =      3.3 : 1.0
+      (u'bar', u'drink') = True                1 : 5      =      3.3 : 1.0
+     (u'long', u'lines') = True                1 : 5      =      3.3 : 1.0
+  (u'counter', u'order') = True                1 : 5      =      3.3 : 1.0
+      (u'time', u'week') = True                1 : 5      =      3.3 : 1.0
+       (u'2nd', u'time') = True                1 : 5      =      3.3 : 1.0
+      (u'give', u'hard') = True                1 : 5      =      3.3 : 1.0
+  (u'ordering', u'food') = True                1 : 5      =      3.3 : 1.0
+   (u'staff', u'member') = True                1 : 5      =      3.3 : 1.0
+       (u'meal', u'not') = True                1 : 5      =      3.3 : 1.0
+  (u'table', u'ordered') = True                1 : 5      =      3.3 : 1.0
+       (u'pork', u'dry') = True                1 : 5      =      3.3 : 1.0
+    (u'place', u'drink') = True                1 : 5      =      3.3 : 1.0
+  (u'customers', u'not') = True                1 : 5      =      3.3 : 1.0
+      (u'low', u'grade') = True                1 : 5      =      3.3 : 1.0
+    (u'food', u'served') = True                1 : 5      =      3.3 : 1.0
+       (u'food', u'ill') = True                1 : 5      =      3.3 : 1.0
+     (u'not', u'served') = True                1 : 5      =      3.3 : 1.0
+    (u'water', u'glass') = True                1 : 5      =      3.3 : 1.0
+    (u'tgi', u'fridays') = True                1 : 5      =      3.3 : 1.0
+     (u'ive', u'called') = True                1 : 5      =      3.3 : 1.0
+     (u'store', u'dont') = True                1 : 5      =      3.3 : 1.0
+    (u'auto', u'repair') = True                1 : 5      =      3.3 : 1.0
+    (u'clean', u'place') = True                1 : 5      =      3.3 : 1.0
+     (u'service', u'im') = True                1 : 5      =      3.3 : 1.0
+      (u'left', u'side') = True                1 : 5      =      3.3 : 1.0
+   (u'food', u'average') = True                1 : 5      =      3.3 : 1.0
+      (u'asked', u'not') = True                1 : 5      =      3.3 : 1.0
+   (u'place', u'reason') = True                1 : 5      =      3.3 : 1.0
+    (u'not', u'crowded') = True                1 : 5      =      3.3 : 1.0
+  (u'good', u'customer') = True                1 : 5      =      3.3 : 1.0
+ (u'twenty', u'minutes') = True                1 : 5      =      3.3 : 1.0
+        (u'3', u'years') = True                1 : 5      =      3.3 : 1.0
+       (u'not', u'feel') = True                1 : 5      =      3.3 : 1.0
+ (u'dont', u'recommend') = True                1 : 5      =      3.3 : 1.0
+  (u'reviews', u'place') = True                1 : 5      =      3.3 : 1.0
+        (u'not', u'put') = True                1 : 5      =      3.3 : 1.0
+       (u'3', u'people') = True                1 : 5      =      3.3 : 1.0
+    (u'sitting', u'bar') = True                1 : 5      =      3.3 : 1.0
+     (u'thought', u'id') = True                1 : 5      =      3.3 : 1.0
+         (u'not', u'im') = True                1 : 5      =      3.3 : 1.0
+   (u'asked', u'wanted') = True                1 : 5      =      3.3 : 1.0
+    (u'minute', u'wait') = True                1 : 5      =      3.3 : 1.0
+      (u'food', u'back') = True                1 : 5      =      3.3 : 1.0
+      (u'time', u'dont') = True                1 : 5      =      3.3 : 1.0
+  (u'daily', u'special') = True                5 : 1      =      3.3 : 1.0
+         (u'im', u'big') = True                5 : 1      =      3.3 : 1.0
+     (u'worth', u'food') = True                5 : 1      =      3.3 : 1.0
+      (u'red', u'green') = True                5 : 1      =      3.3 : 1.0
+      (u'work', u'week') = True                5 : 1      =      3.3 : 1.0
+ (u'family', u'friends') = True                5 : 1      =      3.3 : 1.0
+  (u'food', u'fabulous') = True                5 : 1      =      3.3 : 1.0
+(u'food', u'reasonable') = True                5 : 1      =      3.3 : 1.0
+     (u'years', u'love') = True                5 : 1      =      3.3 : 1.0
+ (u'wonderful', u'time') = True                5 : 1      =      3.3 : 1.0
+    (u'sticky', u'rice') = True                5 : 1      =      3.3 : 1.0
+      (u'open', u'late') = True                5 : 1      =      3.3 : 1.0
+     (u'fresh', u'food') = True                5 : 1      =      3.3 : 1.0
+(u'friendly', u'neighborhood') = True                5 : 1      =      3.3 : 1.0
+   (u'amazing', u'time') = True                5 : 1      =      3.3 : 1.0
+(u'staff', u'attentive') = True                5 : 1      =      3.3 : 1.0
+        (u'im', u'town') = True                5 : 1      =      3.3 : 1.0
+     (u'times', u'year') = True                5 : 1      =      3.3 : 1.0
+(u'fantastic', u'place') = True                5 : 1      =      3.3 : 1.0
+       (u'red', u'wine') = True                5 : 1      =      3.3 : 1.0
+ (u'paisley', u'violin') = True                5 : 1      =      3.3 : 1.0
+ (u'fun', u'atmosphere') = True                5 : 1      =      3.3 : 1.0
+      (u'beer', u'good') = True                5 : 1      =      3.3 : 1.0
+(u'service', u'wonderful') = True                5 : 1      =      3.3 : 1.0
+    (u'taking', u'care') = True                5 : 1      =      3.3 : 1.0
+    (u'beach', u'house') = True                5 : 1      =      3.3 : 1.0
+       (u'van', u'gogh') = True                5 : 1      =      3.3 : 1.0
+     (u'make', u'great') = True                5 : 1      =      3.3 : 1.0
+     (u'piping', u'hot') = True                5 : 1      =      3.3 : 1.0
+  (u'fried', u'pickles') = True                5 : 1      =      3.3 : 1.0
+(u'botanical', u'garden') = True                5 : 1      =      3.3 : 1.0
+    (u'salad', u'great') = True                5 : 1      =      3.3 : 1.0
+    (u'place', u'worth') = True                5 : 1      =      3.3 : 1.0
+      (u'eat', u'lunch') = True                5 : 1      =      3.3 : 1.0
+  (u'chicken', u'curry') = True                5 : 1      =      3.3 : 1.0
+     (u'cool', u'stuff') = True                5 : 1      =      3.3 : 1.0
+    (u'dining', u'room') = True                1 : 5      =      3.1 : 1.0
+       (u'good', u'ive') = True                5 : 1      =      3.0 : 1.0
+(u'fresh', u'ingredients') = True                5 : 1      =      3.0 : 1.0
+ (u'not', u'experience') = True                1 : 5      =      3.0 : 1.0
+        (u'bar', u'not') = True                1 : 5      =      3.0 : 1.0
+      (u'long', u'wait') = True                1 : 5      =      3.0 : 1.0
+       (u'not', u'long') = True                1 : 5      =      3.0 : 1.0
+   (u'service', u'slow') = True                1 : 5      =      3.0 : 1.0
+  (u'chicken', u'fried') = True                1 : 5      =      2.9 : 1.0
+   (u'write', u'review') = True                1 : 5      =      2.9 : 1.0
+    (u'good', u'prices') = True                5 : 1      =      2.9 : 1.0
+   (u'drink', u'orders') = True                1 : 5      =      2.9 : 1.0
+    (u'make', u'things') = True                1 : 5      =      2.9 : 1.0
+   (u'giving', u'place') = True                1 : 5      =      2.9 : 1.0
+   (u'slow', u'service') = True                1 : 5      =      2.9 : 1.0
+   (u'business', u'not') = True                1 : 5      =      2.9 : 1.0
+   (u'charge', u'extra') = True                1 : 5      =      2.9 : 1.0
+(u'disappointed', u'service') = True                1 : 5      =      2.9 : 1.0
+      (u'time', u'work') = True                1 : 5      =      2.9 : 1.0
+      (u'month', u'ago') = True                1 : 5      =      2.9 : 1.0
+(u'boyfriend', u'ordered') = True                1 : 5      =      2.9 : 1.0
+      (u'not', u'close') = True                1 : 5      =      2.9 : 1.0
+ (u'recently', u'moved') = True                1 : 5      =      2.9 : 1.0
+    (u'doesnt', u'care') = True                1 : 5      =      2.9 : 1.0
+       (u'2', u'months') = True                1 : 5      =      2.9 : 1.0
+    (u'looked', u'good') = True                1 : 5      =      2.9 : 1.0
+     (u'wasnt', u'busy') = True                1 : 5      =      2.9 : 1.0
+      (u'didnt', u'pay') = True                1 : 5      =      2.9 : 1.0
+       (u'24', u'hours') = True                1 : 5      =      2.9 : 1.0
+      (u'make', u'long') = True                1 : 5      =      2.9 : 1.0
+    (u'entire', u'meal') = True                1 : 5      =      2.9 : 1.0
+   (u'taking', u'order') = True                1 : 5      =      2.9 : 1.0
+        (u'hes', u'not') = True                1 : 5      =      2.9 : 1.0
+     (u'dont', u'wrong') = True                1 : 5      =      2.9 : 1.0
+ (u'service', u'skills') = True                1 : 5      =      2.9 : 1.0
+     (u'didnt', u'feel') = True                1 : 5      =      2.9 : 1.0
+(u'mexican', u'restaurant') = True                5 : 1      =      2.9 : 1.0
+       (u'not', u'busy') = True                1 : 5      =      2.8 : 1.0
+      (u'half', u'hour') = True                1 : 5      =      2.7 : 1.0
+       (u'big', u'deal') = True                1 : 5      =      2.7 : 1.0
+ (u'multiple', u'times') = True                1 : 5      =      2.7 : 1.0
+        (u'2', u'hours') = True                1 : 5      =      2.7 : 1.0
+     (u'deep', u'fried') = True                1 : 5      =      2.7 : 1.0
+      (u'sauce', u'not') = True                1 : 5      =      2.7 : 1.0
+     (u'didnt', u'make') = True                1 : 5      =      2.7 : 1.0
+      (u'not', u'worry') = True                1 : 5      =      2.7 : 1.0
+     (u'beans', u'rice') = True                5 : 1      =      2.7 : 1.0
+(u'authentic', u'mexican') = True                5 : 1      =      2.7 : 1.0
+ (u'tortilla', u'chips') = True                5 : 1      =      2.7 : 1.0
+     (u'places', u'eat') = True                5 : 1      =      2.7 : 1.0
+   (u'spring', u'rolls') = True                5 : 1      =      2.7 : 1.0
+        (u'big', u'fan') = True                5 : 1      =      2.7 : 1.0
+   (u'phoenix', u'area') = True                5 : 1      =      2.7 : 1.0
+       (u'bar', u'food') = True                5 : 1      =      2.7 : 1.0
+     (u'place', u'stay') = True                5 : 1      =      2.7 : 1.0
+   (u'freshly', u'made') = True                5 : 1      =      2.7 : 1.0
+(u'grilled', u'chicken') = True                5 : 1      =      2.7 : 1.0
+       (u'eat', u'time') = True                5 : 1      =      2.7 : 1.0
+  (u'place', u'mexican') = True                5 : 1      =      2.7 : 1.0
+(u'consistent', u'service') = True                5 : 1      =      2.7 : 1.0
+     (u'thing', u'menu') = True                5 : 1      =      2.7 : 1.0
+       (u'hair', u'cut') = True                5 : 1      =      2.7 : 1.0
+      (u'not', u'spicy') = True                5 : 1      =      2.7 : 1.0
+      (u'back', u'ribs') = True                5 : 1      =      2.7 : 1.0
+(u'american', u'cheese') = True                5 : 1      =      2.7 : 1.0
+     (u'lunch', u'food') = True                5 : 1      =      2.7 : 1.0
+(u'absolutely', u'loved') = True                5 : 1      =      2.7 : 1.0
+     (u'visit', u'time') = True                5 : 1      =      2.7 : 1.0
+      (u'great', u'hot') = True                5 : 1      =      2.7 : 1.0
+      (u'red', u'beans') = True                5 : 1      =      2.7 : 1.0
+      (u'good', u'deal') = True                5 : 1      =      2.7 : 1.0
+     (u'yummy', u'food') = True                5 : 1      =      2.7 : 1.0
+    (u'place', u'watch') = True                5 : 1      =      2.7 : 1.0
+(u'great', u'experiences') = True                5 : 1      =      2.7 : 1.0
+       (u'eat', u'good') = True                5 : 1      =      2.7 : 1.0
+       (u'ive', u'life') = True                5 : 1      =      2.7 : 1.0
+    (u'perfect', u'not') = True                5 : 1      =      2.7 : 1.0
+     (u'back', u'happy') = True                5 : 1      =      2.7 : 1.0
+     (u'time', u'night') = True                5 : 1      =      2.7 : 1.0
+  (u'staff', u'members') = True                5 : 1      =      2.7 : 1.0
+       (u'ive', u'felt') = True                5 : 1      =      2.7 : 1.0
+  (u'phoenix', u'place') = True                5 : 1      =      2.7 : 1.0
+(u'italian', u'sausage') = True                5 : 1      =      2.7 : 1.0
+  (u'bring', u'friends') = True                5 : 1      =      2.7 : 1.0
+  (u'eggs', u'benedict') = True                5 : 1      =      2.7 : 1.0
+      (u'fast', u'good') = True                5 : 1      =      2.7 : 1.0
+(u'experience', u'back') = True                5 : 1      =      2.7 : 1.0
+     (u'food', u'super') = True                5 : 1      =      2.7 : 1.0
+     (u'place', u'walk') = True                5 : 1      =      2.7 : 1.0
+  (u'remember', u'time') = True                5 : 1      =      2.7 : 1.0
+  (u'place', u'phoenix') = True                5 : 1      =      2.7 : 1.0
+  (u'favorite', u'spot') = True                5 : 1      =      2.7 : 1.0
+  (u'not', u'expensive') = True                5 : 1      =      2.7 : 1.0
+   (u'paper', u'towels') = True                5 : 1      =      2.7 : 1.0
+     (u'meat', u'sauce') = True                5 : 1      =      2.7 : 1.0
+      (u'year', u'year') = True                5 : 1      =      2.7 : 1.0
+       (u'ive', u'back') = True                5 : 1      =      2.7 : 1.0
+     (u'thing', u'love') = True                5 : 1      =      2.7 : 1.0
+   (u'side', u'madison') = True                5 : 1      =      2.7 : 1.0
+     (u'quick', u'easy') = True                5 : 1      =      2.7 : 1.0
+     (u'rental', u'car') = True                5 : 1      =      2.7 : 1.0
+      (u'im', u'coming') = True                5 : 1      =      2.7 : 1.0
+   (u'service', u'nice') = True                5 : 1      =      2.7 : 1.0
+  (u'moved', u'madison') = True                5 : 1      =      2.7 : 1.0
+       (u'week', u'not') = True                5 : 1      =      2.7 : 1.0
+(u'restaurants', u'area') = True                5 : 1      =      2.7 : 1.0
+(u'athenian', u'express') = True                5 : 1      =      2.7 : 1.0
+(u'downtown', u'phoenix') = True                5 : 1      =      2.7 : 1.0
+(u'wisconsin', u'dells') = True                5 : 1      =      2.7 : 1.0
+      (u'ate', u'lunch') = True                5 : 1      =      2.7 : 1.0
+  (u'warm', u'friendly') = True                5 : 1      =      2.7 : 1.0
+(u'great', u'breakfast') = True                5 : 1      =      2.7 : 1.0
+     (u'food', u'tasty') = True                5 : 1      =      2.7 : 1.0
+     (u'food', u'staff') = True                5 : 1      =      2.7 : 1.0
+    (u'good', u'people') = True                5 : 1      =      2.7 : 1.0
+   (u'garlic', u'sauce') = True                5 : 1      =      2.7 : 1.0
+      (u'dont', u'wait') = True                5 : 1      =      2.7 : 1.0
+     (u'years', u'food') = True                5 : 1      =      2.7 : 1.0
+    (u'local', u'joint') = True                5 : 1      =      2.7 : 1.0
+    (u'prices', u'fair') = True                5 : 1      =      2.7 : 1.0
+    (u'salsa', u'spicy') = True                5 : 1      =      2.7 : 1.0
+     (u'time', u'lunch') = True                5 : 1      =      2.7 : 1.0
+  (u'refried', u'beans') = True                5 : 1      =      2.7 : 1.0
+  (u'amazing', u'place') = True                5 : 1      =      2.7 : 1.0
+     (u'clean', u'room') = True                5 : 1      =      2.7 : 1.0
+ (u'awesome', u'people') = True                5 : 1      =      2.7 : 1.0
+       (u'circle', u'k') = True                5 : 1      =      2.7 : 1.0
+      (u'blue', u'corn') = True                5 : 1      =      2.7 : 1.0
+(u'spaghetti', u'factory') = True                5 : 1      =      2.7 : 1.0
+       (u'bean', u'dip') = True                5 : 1      =      2.7 : 1.0
+ (u'central', u'avenue') = True                5 : 1      =      2.7 : 1.0
+   (u'free', u'parking') = True                5 : 1      =      2.7 : 1.0
+ (u'good', u'breakfast') = True                5 : 1      =      2.7 : 1.0
+(u'server', u'friendly') = True                5 : 1      =      2.7 : 1.0
+       (u'isnt', u'bad') = True                5 : 1      =      2.7 : 1.0
+    (u'place', u'rocks') = True                5 : 1      =      2.7 : 1.0
+      (u'back', u'menu') = True                5 : 1      =      2.7 : 1.0
+(u'excellent', u'customer') = True                5 : 1      =      2.7 : 1.0
+  (u'thought', u'great') = True                5 : 1      =      2.7 : 1.0
+     (u'menu', u'items') = True                5 : 1      =      2.7 : 1.0
+      (u'foo', u'young') = True                5 : 1      =      2.7 : 1.0
+(u'service', u'awesome') = True                5 : 1      =      2.7 : 1.0
+ (u'fellow', u'yelpers') = True                5 : 1      =      2.7 : 1.0
+(u'friday', u'saturday') = True                5 : 1      =      2.7 : 1.0
+  (u'regular', u'basis') = True                5 : 1      =      2.7 : 1.0
+    (u'pretty', u'nice') = True                5 : 1      =      2.7 : 1.0
+   (u'place', u'street') = True                5 : 1      =      2.7 : 1.0
+     (u'staff', u'kind') = True                5 : 1      =      2.7 : 1.0
+    (u'great', u'music') = True                5 : 1      =      2.7 : 1.0
+  (u'sunday', u'brunch') = True                5 : 1      =      2.7 : 1.0
+    (u'night', u'found') = True                5 : 1      =      2.7 : 1.0
+  (u'service', u'quick') = True                5 : 1      =      2.7 : 1.0
+   (u'glasses', u'wine') = True                5 : 1      =      2.7 : 1.0
+      (u'dos', u'equis') = True                5 : 1      =      2.7 : 1.0
+   (u'cutting', u'hair') = True                5 : 1      =      2.7 : 1.0
+    (u'friday', u'fish') = True                5 : 1      =      2.7 : 1.0
+     (u'place', u'meet') = True                5 : 1      =      2.7 : 1.0
+     (u'kind', u'place') = True                5 : 1      =      2.7 : 1.0
+      (u'place', u'not') = True                1 : 5      =      2.6 : 1.0
+  (u'things', u'things') = True                1 : 5      =      2.6 : 1.0
+  (u'fond', u'memories') = True                1 : 5      =      2.6 : 1.0
+     (u'im', u'talking') = True                1 : 5      =      2.6 : 1.0
+     (u'high', u'hopes') = True                1 : 5      =      2.6 : 1.0
+     (u'didnt', u'hear') = True                1 : 5      =      2.6 : 1.0
+(u'disappointed', u'ordered') = True                1 : 5      =      2.6 : 1.0
+    (u'wrong', u'order') = True                1 : 5      =      2.6 : 1.0
+     (u'hotel', u'room') = True                1 : 5      =      2.6 : 1.0
+     (u'decent', u'bar') = True                1 : 5      =      2.6 : 1.0
+       (u'not', u'cold') = True                1 : 5      =      2.6 : 1.0
+     (u'food', u'didnt') = True                1 : 5      =      2.6 : 1.0
+   (u'waiter', u'asked') = True                1 : 5      =      2.6 : 1.0
+     (u'food', u'cheap') = True                1 : 5      =      2.6 : 1.0
+     (u'im', u'sitting') = True                1 : 5      =      2.6 : 1.0
+    (u'people', u'food') = True                1 : 5      =      2.6 : 1.0
+       (u'made', u'big') = True                1 : 5      =      2.6 : 1.0
+    (u'times', u'price') = True                1 : 5      =      2.6 : 1.0
+      (u'not', u'moved') = True                1 : 5      =      2.6 : 1.0
+(u'repeat', u'customer') = True                1 : 5      =      2.6 : 1.0
+ (u'biscuits', u'gravy') = True                1 : 5      =      2.6 : 1.0
+    (u'tasted', u'good') = True                1 : 5      =      2.6 : 1.0
+    (u'thing', u'didnt') = True                1 : 5      =      2.6 : 1.0
+    (u'customer', u'im') = True                1 : 5      =      2.6 : 1.0
+       (u'table', u'10') = True                1 : 5      =      2.6 : 1.0
+    (u'older', u'woman') = True                1 : 5      =      2.6 : 1.0
+ (u'cafeteria', u'food') = True                1 : 5      =      2.6 : 1.0
+(u'experiences', u'staff') = True                1 : 5      =      2.6 : 1.0
+(u'atmosphere', u'nice') = True                1 : 5      =      2.6 : 1.0
+    (u'things', u'past') = True                1 : 5      =      2.6 : 1.0
+      (u'part', u'meal') = True                1 : 5      =      2.6 : 1.0
+ (u'degree', u'weather') = True                1 : 5      =      2.6 : 1.0
+   (u'place', u'decent') = True                1 : 5      =      2.6 : 1.0
+  (u'stop', u'thinking') = True                1 : 5      =      2.6 : 1.0
+     (u'good', u'years') = True                1 : 5      =      2.6 : 1.0
+    (u'back', u'return') = True                1 : 5      =      2.6 : 1.0
+     (u'decor', u'nice') = True                1 : 5      =      2.6 : 1.0
+   (u'ordered', u'menu') = True                1 : 5      =      2.6 : 1.0
+   (u'deli', u'counter') = True                1 : 5      =      2.6 : 1.0
+   (u'sauce', u'flavor') = True                1 : 5      =      2.6 : 1.0
+    (u'onion', u'rings') = True                1 : 5      =      2.6 : 1.0
+   (u'sounded', u'good') = True                1 : 5      =      2.6 : 1.0
+(u'diamondbacks', u'game') = True                1 : 5      =      2.6 : 1.0
+    (u'place', u'lived') = True                1 : 5      =      2.6 : 1.0
+(u'seated', u'immediately') = True                1 : 5      =      2.6 : 1.0
+  (u'pretty', u'decent') = True                1 : 5      =      2.6 : 1.0
+      (u'ill', u'stick') = True                1 : 5      =      2.6 : 1.0
+     (u'bland', u'food') = True                1 : 5      =      2.6 : 1.0
+  (u'thought', u'night') = True                1 : 5      =      2.6 : 1.0
+     (u'make', u'happy') = True                1 : 5      =      2.6 : 1.0
+       (u'not', u'rate') = True                1 : 5      =      2.6 : 1.0
+   (u'brought', u'food') = True                1 : 5      =      2.6 : 1.0
+     (u'place', u'shot') = True                1 : 5      =      2.6 : 1.0
+    (u'meat', u'tasted') = True                1 : 5      =      2.6 : 1.0
+       (u'due', u'lack') = True                1 : 5      =      2.6 : 1.0
+        (u'big', u'fat') = True                1 : 5      =      2.6 : 1.0
+     (u'worth', u'time') = True                1 : 5      =      2.6 : 1.0
+       (u'shes', u'not') = True                1 : 5      =      2.6 : 1.0
+    (u'minutes', u'bar') = True                1 : 5      =      2.6 : 1.0
+      (u'good', u'made') = True                1 : 5      =      2.6 : 1.0
+   (u'ranch', u'market') = True                1 : 5      =      2.6 : 1.0
+       (u'time', u'day') = True                1 : 5      =      2.6 : 1.0
+       (u'hit', u'miss') = True                1 : 5      =      2.6 : 1.0
+  (u'taking', u'orders') = True                1 : 5      =      2.6 : 1.0
+     (u'thing', u'mind') = True                1 : 5      =      2.6 : 1.0
+   (u'back', u'weekend') = True                1 : 5      =      2.6 : 1.0
+   (u'place', u'serves') = True                1 : 5      =      2.6 : 1.0
+  (u'store', u'couldnt') = True                1 : 5      =      2.6 : 1.0
+       (u'not', u'mine') = True                1 : 5      =      2.6 : 1.0
+      (u'dimly', u'lit') = True                1 : 5      =      2.6 : 1.0
+    (u'thought', u'not') = True                1 : 5      =      2.6 : 1.0
+(u'couldnt', u'possibly') = True                1 : 5      =      2.6 : 1.0
+(u'department', u'store') = True                1 : 5      =      2.6 : 1.0
+    (u'ive', u'problem') = True                1 : 5      =      2.6 : 1.0
+    (u'im', u'thinking') = True                1 : 5      =      2.6 : 1.0
+     (u'walked', u'not') = True                1 : 5      =      2.6 : 1.0
+     (u'decent', u'not') = True                1 : 5      =      2.6 : 1.0
+          (u'5', u'min') = True                1 : 5      =      2.6 : 1.0
+       (u'3rd', u'time') = True                1 : 5      =      2.6 : 1.0
+    (u'eating', u'food') = True                1 : 5      =      2.6 : 1.0
+    (u'100', u'degrees') = True                1 : 5      =      2.6 : 1.0
+  (u'needless', u'wont') = True                1 : 5      =      2.6 : 1.0
+ (u'drink', u'specials') = True                1 : 5      =      2.6 : 1.0
+     (u'spent', u'rest') = True                1 : 5      =      2.6 : 1.0
+     (u'person', u'not') = True                1 : 5      =      2.6 : 1.0
+   (u'star', u'service') = True                1 : 5      =      2.6 : 1.0
+   (u'lady', u'counter') = True                1 : 5      =      2.6 : 1.0
+     (u'waiting', u'20') = True                1 : 5      =      2.6 : 1.0
+       (u'eat', u'meat') = True                1 : 5      =      2.6 : 1.0
+       (u'find', u'not') = True                1 : 5      =      2.6 : 1.0
+     (u'middle', u'day') = True                1 : 5      =      2.6 : 1.0
+  (u'cheese', u'burger') = True                1 : 5      =      2.6 : 1.0
+(u'immediately', u'called') = True                1 : 5      =      2.6 : 1.0
+ (u'left', u'wondering') = True                1 : 5      =      2.6 : 1.0
+      (u'food', u'kind') = True                1 : 5      =      2.6 : 1.0
+      (u'nice', u'food') = True                1 : 5      =      2.6 : 1.0
+       (u'not', u'kids') = True                1 : 5      =      2.6 : 1.0
+   (u'people', u'ahead') = True                1 : 5      =      2.6 : 1.0
+       (u'good', u'egg') = True                1 : 5      =      2.6 : 1.0
+(u'pleased', u'service') = True                1 : 5      =      2.6 : 1.0
+     (u'wait', u'leave') = True                1 : 5      =      2.6 : 1.0
+    (u'server', u'told') = True                1 : 5      =      2.6 : 1.0
+      (u'big', u'chain') = True                1 : 5      =      2.6 : 1.0
+        (u'45', u'days') = True                1 : 5      =      2.6 : 1.0
+   (u'tables', u'dirty') = True                1 : 5      =      2.6 : 1.0
+     (u'taking', u'car') = True                1 : 5      =      2.6 : 1.0
+(u'sitting', u'counter') = True                1 : 5      =      2.6 : 1.0
+     (u'not', u'prices') = True                1 : 5      =      2.6 : 1.0
+     (u'im', u'telling') = True                1 : 5      =      2.6 : 1.0
+ (u'ordered', u'drinks') = True                1 : 5      =      2.6 : 1.0
+   (u'called', u'order') = True                1 : 5      =      2.6 : 1.0
+   (u'friends', u'good') = True                1 : 5      =      2.6 : 1.0
+       (u'time', u'not') = True                1 : 5      =      2.6 : 1.0
+    (u'asked', u'extra') = True                1 : 5      =      2.6 : 1.0
+   (u'bottle', u'water') = True                1 : 5      =      2.6 : 1.0
+(u'entrees', u'ordered') = True                1 : 5      =      2.6 : 1.0
+(u'loyal', u'customers') = True                1 : 5      =      2.6 : 1.0
+(u'experience', u'ordered') = True                1 : 5      =      2.6 : 1.0
+(u'restaurant', u'pretty') = True                1 : 5      =      2.6 : 1.0
+    (u'opened', u'door') = True                1 : 5      =      2.6 : 1.0
+     (u'watch', u'game') = True                1 : 5      =      2.6 : 1.0
+     (u'youre', u'dont') = True                1 : 5      =      2.6 : 1.0
+    (u'crappy', u'food') = True                1 : 5      =      2.6 : 1.0
+     (u'late', u'lunch') = True                1 : 5      =      2.6 : 1.0
+       (u'15', u'hours') = True                1 : 5      =      2.6 : 1.0
+ (u'supposed', u'taste') = True                1 : 5      =      2.6 : 1.0
+     (u'asked', u'side') = True                1 : 5      =      2.6 : 1.0
+(u'regular', u'customers') = True                1 : 5      =      2.6 : 1.0
+     (u'life', u'place') = True                1 : 5      =      2.6 : 1.0
+      (u'not', u'store') = True                1 : 5      =      2.6 : 1.0
+(u'flour', u'tortillas') = True                1 : 5      =      2.6 : 1.0
+       (u'day', u'back') = True                1 : 5      =      2.6 : 1.0
+     (u'asked', u'open') = True                1 : 5      =      2.6 : 1.0
+    (u'food', u'people') = True                1 : 5      =      2.6 : 1.0
+      (u'wait', u'week') = True                1 : 5      =      2.6 : 1.0
+    (u'ive', u'ordered') = True                1 : 5      =      2.6 : 1.0
+      (u'work', u'dont') = True                1 : 5      =      2.6 : 1.0
+    (u'back', u'walked') = True                1 : 5      =      2.6 : 1.0
+        (u'car', u'car') = True                1 : 5      =      2.6 : 1.0
+  (u'goodness', u'sake') = True                1 : 5      =      2.6 : 1.0
+   (u'not', u'prepared') = True                1 : 5      =      2.6 : 1.0
+     (u'night', u'food') = True                1 : 5      =      2.6 : 1.0
+     (u'food', u'table') = True                1 : 5      =      2.6 : 1.0
+      (u'day', u'store') = True                1 : 5      =      2.6 : 1.0
+     (u'time', u'staff') = True                1 : 5      =      2.6 : 1.0
+       (u'wait', u'sit') = True                1 : 5      =      2.6 : 1.0
+      (u'told', u'make') = True                1 : 5      =      2.6 : 1.0
+     (u'sat', u'inside') = True                1 : 5      =      2.6 : 1.0
+ (u'waiter', u'brought') = True                1 : 5      =      2.6 : 1.0
+     (u'bread', u'good') = True                1 : 5      =      2.6 : 1.0
+    (u'bean', u'cheese') = True                1 : 5      =      2.6 : 1.0
+ (u'started', u'eating') = True                1 : 5      =      2.6 : 1.0
+    (u'not', u'chicago') = True                1 : 5      =      2.6 : 1.0
+     (u'good', u'thing') = True                1 : 5      =      2.6 : 1.0
+  (u'placing', u'order') = True                1 : 5      =      2.6 : 1.0
+      (u'point', u'not') = True                1 : 5      =      2.6 : 1.0
+(u'place', u'recommend') = True                1 : 5      =      2.6 : 1.0
+    (u'time', u'looked') = True                1 : 5      =      2.6 : 1.0
+     (u'paper', u'thin') = True                1 : 5      =      2.6 : 1.0
+    (u'tiny', u'pieces') = True                1 : 5      =      2.6 : 1.0
+      (u'place', u'put') = True                1 : 5      =      2.6 : 1.0
+ (u'called', u'manager') = True                1 : 5      =      2.6 : 1.0
+(u'serve', u'breakfast') = True                1 : 5      =      2.6 : 1.0
+  (u'single', u'person') = True                1 : 5      =      2.6 : 1.0
+  (u'not', u'recognize') = True                1 : 5      =      2.6 : 1.0
+       (u'dont', u'fit') = True                1 : 5      =      2.6 : 1.0
+   (u'ordered', u'half') = True                1 : 5      =      2.6 : 1.0
+   (u'fries', u'tasted') = True                1 : 5      =      2.6 : 1.0
+ (u'customer', u'asked') = True                1 : 5      =      2.6 : 1.0
+      (u'store', u'day') = True                1 : 5      =      2.6 : 1.0
+     (u'drinks', u'bar') = True                1 : 5      =      2.6 : 1.0
+   (u'ordered', u'time') = True                1 : 5      =      2.6 : 1.0
+       (u'give', u'car') = True                1 : 5      =      2.6 : 1.0
+    (u'wanted', u'wait') = True                1 : 5      =      2.6 : 1.0
+   (u'heading', u'back') = True                1 : 5      =      2.6 : 1.0
+       (u'night', u'im') = True                1 : 5      =      2.6 : 1.0
+(u'restaurant', u'service') = True                1 : 5      =      2.6 : 1.0
+    (u'not', u'changed') = True                1 : 5      =      2.6 : 1.0
+     (u'good', u'local') = True                1 : 5      =      2.6 : 1.0
+      (u'give', u'crap') = True                1 : 5      =      2.6 : 1.0
+    (u'return', u'time') = True                1 : 5      =      2.6 : 1.0
+      (u'guy', u'front') = True                1 : 5      =      2.6 : 1.0
+(u'multiple', u'occasions') = True                1 : 5      =      2.6 : 1.0
+      (u'fan', u'place') = True                1 : 5      =      2.6 : 1.0
+ (u'pepper', u'chicken') = True                1 : 5      =      2.6 : 1.0
+    (u'make', u'drinks') = True                1 : 5      =      2.6 : 1.0
+    (u'entire', u'time') = True                1 : 5      =      2.6 : 1.0
+     (u'window', u'not') = True                1 : 5      =      2.6 : 1.0
+    (u'barely', u'made') = True                1 : 5      =      2.6 : 1.0
+  (u'positive', u'note') = True                1 : 5      =      2.6 : 1.0
+      (u'dirty', u'car') = True                1 : 5      =      2.6 : 1.0
+ (u'understand', u'not') = True                1 : 5      =      2.6 : 1.0
+   (u'inside', u'store') = True                1 : 5      =      2.6 : 1.0
+       (u'15', u'times') = True                1 : 5      =      2.6 : 1.0
+     (u'stay', u'hotel') = True                1 : 5      =      2.6 : 1.0
+(u'birthday', u'dinner') = True                1 : 5      =      2.6 : 1.0
+      (u'not', u'taste') = True                1 : 5      =      2.6 : 1.0
+      (u'day', u'night') = True                1 : 5      =      2.6 : 1.0
+     (u'food', u'court') = True                1 : 5      =      2.6 : 1.0
+  (u'ordered', u'drink') = True                1 : 5      =      2.6 : 1.0
+     (u'reason', u'ive') = True                1 : 5      =      2.6 : 1.0
+(u'service', u'experienced') = True                1 : 5      =      2.6 : 1.0
+     (u'bbq', u'places') = True                1 : 5      =      2.6 : 1.0
+(u'service', u'received') = True                1 : 5      =      2.6 : 1.0
+    (u'fancy', u'place') = True                1 : 5      =      2.6 : 1.0
+  (u'fish', u'sandwich') = True                1 : 5      =      2.6 : 1.0
+   (u'extra', u'crispy') = True                1 : 5      =      2.6 : 1.0
+     (u'home', u'night') = True                1 : 5      =      2.6 : 1.0
+       (u'good', u'bye') = True                1 : 5      =      2.6 : 1.0
+     (u'bring', u'back') = True                1 : 5      =      2.6 : 1.0
+      (u'cut', u'short') = True                1 : 5      =      2.6 : 1.0
+  (u'ordered', u'salad') = True                1 : 5      =      2.6 : 1.0
+(u'chicken', u'chicken') = True                1 : 5      =      2.6 : 1.0
+       (u'25', u'hours') = True                1 : 5      =      2.6 : 1.0
+  (u'not', u'customers') = True                1 : 5      =      2.6 : 1.0
+   (u'asked', u'server') = True                1 : 5      =      2.6 : 1.0
+   (u'hospital', u'not') = True                1 : 5      =      2.6 : 1.0
+      (u'long', u'term') = True                1 : 5      =      2.6 : 1.0
+   (u'back', u'anytime') = True                1 : 5      =      2.6 : 1.0
+      (u'salsa', u'not') = True                1 : 5      =      2.6 : 1.0
+       (u'busy', u'day') = True                1 : 5      =      2.6 : 1.0
+      (u'dont', u'park') = True                1 : 5      =      2.6 : 1.0
+   (u'service', u'long') = True                1 : 5      =      2.6 : 1.0
+    (u'day', u'decided') = True                1 : 5      =      2.6 : 1.0
+       (u'ice', u'cold') = True                1 : 5      =      2.6 : 1.0
+        (u'lo', u'mein') = True                1 : 5      =      2.6 : 1.0
+(u'hundreds', u'dollars') = True                1 : 5      =      2.6 : 1.0
+     (u'order', u'back') = True                1 : 5      =      2.6 : 1.0
+       (u'ill', u'food') = True                1 : 5      =      2.6 : 1.0
+      (u'drink', u'not') = True                1 : 5      =      2.6 : 1.0
+     (u'point', u'dont') = True                1 : 5      =      2.6 : 1.0
+   (u'return', u'place') = True                1 : 5      =      2.6 : 1.0
+   (u'chili', u'cheese') = True                1 : 5      =      2.6 : 1.0
+(u'establishment', u'time') = True                1 : 5      =      2.6 : 1.0
+   (u'plain', u'simple') = True                1 : 5      =      2.6 : 1.0
+         (u'id', u'not') = True                1 : 5      =      2.6 : 1.0
+(u'scheduled', u'appointment') = True                1 : 5      =      2.6 : 1.0
+(u'experience', u'life') = True                1 : 5      =      2.6 : 1.0
+       (u'2', u'drinks') = True                1 : 5      =      2.6 : 1.0
+(u'chicken', u'nuggets') = True                1 : 5      =      2.6 : 1.0
+  (u'make', u'decision') = True                1 : 5      =      2.6 : 1.0
+  (u'decided', u'order') = True                1 : 5      =      2.6 : 1.0
+(u'transmission', u'fluid') = True                1 : 5      =      2.6 : 1.0
+  (u'thing', u'noticed') = True                1 : 5      =      2.6 : 1.0
+     (u'90', u'minutes') = True                1 : 5      =      2.6 : 1.0
+   (u'city', u'phoenix') = True                1 : 5      =      2.6 : 1.0
+   (u'car', u'detailed') = True                1 : 5      =      2.6 : 1.0
+(u'completely', u'wrong') = True                1 : 5      =      2.6 : 1.0
+    (u'sales', u'staff') = True                1 : 5      =      2.6 : 1.0
+      (u'issue', u'not') = True                1 : 5      =      2.6 : 1.0
+     (u'store', u'pick') = True                1 : 5      =      2.6 : 1.0
+     (u'order', u'dont') = True                1 : 5      =      2.6 : 1.0
+(u'bad', u'experiences') = True                1 : 5      =      2.6 : 1.0
+   (u'ordered', u'beef') = True                1 : 5      =      2.6 : 1.0
+   (u'split', u'checks') = True                1 : 5      =      2.6 : 1.0
+     (u'future', u'not') = True                1 : 5      =      2.6 : 1.0
+       (u'year', u'not') = True                1 : 5      =      2.6 : 1.0
+(u'time', u'restaurant') = True                1 : 5      =      2.6 : 1.0
+     (u'didnt', u'high') = True                1 : 5      =      2.6 : 1.0
+   (u'wife', u'decided') = True                1 : 5      =      2.6 : 1.0
+      (u'car', u'clean') = True                1 : 5      =      2.6 : 1.0
+   (u'credit', u'union') = True                1 : 5      =      2.6 : 1.0
+   (u'empty', u'handed') = True                1 : 5      =      2.6 : 1.0
+(u'service', u'friendly') = True                5 : 1      =      2.5 : 1.0
+      (u'hole', u'wall') = True                5 : 1      =      2.5 : 1.0
+      (u'not', u'great') = True                1 : 5      =      2.5 : 1.0
+      (u'hours', u'not') = True                1 : 5      =      2.5 : 1.0
+    (u'guy', u'working') = True                1 : 5      =      2.5 : 1.0
+     (u'taste', u'good') = True                1 : 5      =      2.5 : 1.0
+      (u'west', u'side') = True                1 : 5      =      2.5 : 1.0
+       (u'12', u'hours') = True                1 : 5      =      2.5 : 1.0
+    (u'food', u'decent') = True                1 : 5      =      2.5 : 1.0
+(u'chinese', u'restaurants') = True                1 : 5      =      2.5 : 1.0
+         (u'30', u'min') = True                1 : 5      =      2.5 : 1.0
+  (u'received', u'food') = True                1 : 5      =      2.5 : 1.0
+      (u'wait', u'line') = True                1 : 5      =      2.5 : 1.0
+     (u'cheese', u'not') = True                1 : 5      =      2.5 : 1.0
+     (u'simply', u'not') = True                1 : 5      =      2.5 : 1.0
+     (u'didnt', u'time') = True                1 : 5      =      2.5 : 1.0
+      (u'30', u'minute') = True                1 : 5      =      2.5 : 1.0
+       (u'5', u'people') = True                1 : 5      =      2.5 : 1.0
+        (u'place', u'3') = True                1 : 5      =      2.5 : 1.0
+  (u'back', u'tomorrow') = True                1 : 5      =      2.5 : 1.0
+     (u'time', u'spent') = True                1 : 5      =      2.5 : 1.0
+  (u'minutes', u'table') = True                1 : 5      =      2.5 : 1.0
+(u'treat', u'customers') = True                1 : 5      =      2.5 : 1.0
+   (u'waiting', u'long') = True                1 : 5      =      2.5 : 1.0
+      (u'open', u'door') = True                1 : 5      =      2.5 : 1.0
+(u'place', u'restaurant') = True                1 : 5      =      2.5 : 1.0
+         (u'1', u'hour') = True                1 : 5      =      2.5 : 1.0
+    (u'knew', u'wanted') = True                1 : 5      =      2.5 : 1.0
+     (u'not', u'taking') = True                1 : 5      =      2.5 : 1.0
+   (u'couldnt', u'wait') = True                1 : 5      =      2.5 : 1.0
+  (u'coach', u'willies') = True                1 : 5      =      2.5 : 1.0
+  (u'cash', u'register') = True                1 : 5      =      2.5 : 1.0
+     (u'place', u'full') = True                1 : 5      =      2.5 : 1.0
+       (u'long', u'day') = True                1 : 5      =      2.5 : 1.0
+    (u'star', u'review') = True                1 : 5      =      2.5 : 1.0
+       (u'day', u'time') = True                1 : 5      =      2.5 : 1.0
+   (u'people', u'party') = True                1 : 5      =      2.5 : 1.0
+    (u'told', u'waiter') = True                1 : 5      =      2.5 : 1.0
