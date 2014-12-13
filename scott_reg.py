@@ -31,6 +31,8 @@ def read_n_reviews(n, infile):
   #      if word.endswith(suffix):
    #         return word[:-len(suffix)]
 	#return word
+#Regression parsing json with most commons words by star rating
+
 
 def load_stop_words():
 	with open("stopwords.txt") as stopwords:
@@ -39,7 +41,7 @@ def load_stop_words():
 
 def common_words():
 	# Number of reviews to process
-	num_reviews_to_process = 1000
+	num_reviews_to_process = 10000
 	stopwords = load_stop_words()
 	total_review_list_5 = []
 	total_review_list_4 = []
@@ -47,7 +49,7 @@ def common_words():
 	total_review_list_2 = []
 	total_review_list_1 = []
 
-	first_reviews = read_n_reviews(num_reviews_to_process, "reviews_sample.json")
+	first_reviews = read_n_reviews(num_reviews_to_process, "reviews_10k.json")
 
 	for review in first_reviews:
 		for word in review[0]:
@@ -67,11 +69,11 @@ def common_words():
 	fdist2 = nltk.FreqDist(total_review_list_2)
 	fdist1 = nltk.FreqDist(total_review_list_1)
 	most_common_words_list = []
-	most_common_words_list.append(fdist1.most_common(99))
-	most_common_words_list.append(fdist2.most_common(99))
-	most_common_words_list.append(fdist3.most_common(99))
-	most_common_words_list.append(fdist4.most_common(99))
-	most_common_words_list.append(fdist5.most_common(99))
+	most_common_words_list.append(fdist1.most_common(1499))
+	most_common_words_list.append(fdist2.most_common(1499))
+	most_common_words_list.append(fdist3.most_common(1499))
+	most_common_words_list.append(fdist4.most_common(1499))
+	most_common_words_list.append(fdist5.most_common(1499))
 
 
 	return most_common_words_list
@@ -79,9 +81,9 @@ def common_words():
 
 def run():
 
-	num_reviews = 600
+	num_reviews = 8000
 	num_features = 6
-	num_test_reviews = 400
+	num_test_reviews = 2000
 
 	#get n by m for training
 	#get n by m for testing
@@ -90,9 +92,9 @@ def run():
 	test_x = np.zeros((num_test_reviews, num_features))
 	test_t = np.zeros((num_test_reviews,1))
 
-	all_reviews = read_n_reviews(1000, "reviews_sample.json")
-	training_set = all_reviews[0:600]
-	testing_set = all_reviews[600:1000]
+	all_reviews = read_n_reviews(10000, "reviews_10k.json")
+	training_set = all_reviews[0:8000]
+	testing_set = all_reviews[8000:10000]
 	most_common_words = common_words()
 	#print most_common_words
 	#iterate over most common words
@@ -127,12 +129,19 @@ def run():
 
 	#print rounded_predictions
 	num_correct = 0
-	for i in range(400):
-		#value = abs(rounded_predictions[i]  test_t[i][0])
+	value = 0
+	for i in range(2000):
+		temp = predictions[i]
+		if temp > 5.0:
+			temp = 5.0
+		if temp < 1.0:
+			temp = 1.0
+		value += abs(temp - test_t[i][0])
 		if rounded_predictions[i] == test_t[i][0]:
 			num_correct += 1
 
-	print num_correct/400.0
+	print value/2000.0 #avg error
+	print num_correct/2000.0 #accuracy
 
 
 if __name__ == "__main__":
