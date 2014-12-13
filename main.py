@@ -1,18 +1,23 @@
 import general_regression
 import read_reviews
 import naive_bayes
+import common_words_by_star
 
 def main():
 
 	reviews = read_reviews.read(10000)
 
 
+	star_mcw_lists = common_words_by_star.get_common_words(reviews, 50)
+	for i in range(1,6):
+		print star_mcw_lists[i]
 
-	nb_num_train = 9000
-	nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)	
+	################ NAIVE BAYES ########################################
+	#nb_num_train = 9000
+	#nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)	
 	#print nb_classifier.show_most_informative_features(100)
-	nb_test = naive_bayes.build_test_set(reviews, nb_num_train)
-	naive_bayes.print_accuracies(nb_classifier, nb_test)
+	#nb_test = naive_bayes.build_test_set(reviews, nb_num_train)
+	#naive_bayes.print_accuracies(nb_classifier, nb_test)
 
 
 	#load into feature matrix
