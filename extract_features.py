@@ -85,8 +85,11 @@ def build_features(naive_classifier, review_words, most_common_words):
   feature_matrix.append(float(one_bigram_count))
   feature_matrix.append(float(five_bigram_count))
 
+
+
   # Add info about probabilites
-  probs = naive_classifier.prob_classify(review_words) 
+  probs = naive_classifier.prob_classify({word: True for word in review_words}) 
+
   feature_matrix.append(probs.prob(1))
   feature_matrix.append(probs.prob(2))
   feature_matrix.append(probs.prob(3))
@@ -99,15 +102,15 @@ def build_features(naive_classifier, review_words, most_common_words):
   four_word_count = 0
   five_word_count = 0
   for word in review_words:
-    if word in most_common_words(1):
+    if word in most_common_words[1]:
       one_word_count += 1
-    if word in most_common_words(2):
+    if word in most_common_words[2]:
       two_word_count += 1
-    if word in most_common_words(3):
+    if word in most_common_words[3]:
       three_word_count += 1
-    if word in most_common_words(4):
+    if word in most_common_words[4]:
       four_word_count += 1
-    if word in most_common_words(5):
+    if word in most_common_words[5]:
       five_word_count += 1
 
   feature_matrix.append(float(one_word_count))
