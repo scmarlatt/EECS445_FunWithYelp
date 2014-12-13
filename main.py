@@ -2,6 +2,8 @@ import general_regression
 import read_reviews
 import naive_bayes
 import extract_features
+import common_words_by_star
+
 def main():
 
 
@@ -9,12 +11,16 @@ def main():
 	reviews = read_reviews.read(15000)
   # reviews[1] is a list of all 15000 rfone star reviews
 
+	star_mcw_lists = common_words_by_star.get_common_words(reviews, 50)
+	for i in range(1,6):
+		print star_mcw_lists[i]
 
-	nb_num_train = 8000
-	nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)	
-	print nb_classifier.show_most_informative_features(100)
-	nb_test = naive_bayes.build_test_set(reviews, nb_num_train)
-	naive_bayes.print_accuracies(nb_classifier, nb_test)
+	################ NAIVE BAYES ########################################
+	#nb_num_train = 9000
+	#nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)	
+	#print nb_classifier.show_most_informative_features(100)
+	#nb_test = naive_bayes.build_test_set(reviews, nb_num_train)
+	#naive_bayes.print_accuracies(nb_classifier, nb_test)
 
   # to find the pdist for a review
   #   probs =  nb_classifier.prob_classify(review)
