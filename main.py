@@ -4,6 +4,8 @@ import naive_bayes
 import extract_features
 import common_words_by_star
 import numpy as np
+import svm_classify
+import svm_regression
 
 def main():
 
@@ -32,10 +34,10 @@ def main():
 	test_features = []
 	test_targets = []
 	for i in [1,2,3,4,5]:
-		for review in reviews[i][:3000]:
+		for review in reviews[i][:4000]:
 			train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists[i], words_one, words_five, bigrams_one, bigrams_five))
 			train_targets.append(i)
-		for review in reviews[i][3000:]:
+		for review in reviews[i][4000:]:
 			test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists[i], words_one, words_five, bigrams_one, bigrams_five))
 			test_targets.append(i)
 
@@ -54,11 +56,24 @@ def main():
 
 	#load into feature matrix
 
-	print "Running regression training"
+	print "Running linear regression training"
 	regr = general_regression.lin_reg(train_x, train_t)
 
 	print "Testing regression"
 	general_regression.test_and_print_regression(test_x, test_t, regr)
+
+	print "Running SVM classifier"
+	svm_model = svm_classify.classify(train_x, train_t)
+
+	print "Testing SVM classifier"
+	svm_classify.test_and_print_svm(test_x, test_t, svm_model)
+
+	print "Running SVM regression"
+	svm_reg_model = svm_regression.regression(train_x, train_t)
+
+	print "Testing SVM regression"
+	svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
+
 
 
 if __name__ == "__main__":

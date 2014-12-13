@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import datasets, linear_model, svm
 
-def svm(train_x, train_t):
+def classify(train_x, train_t):
 
 	svm_model = svm.SVC(kernel='rbf', C=1e3, gamma=0.1)
 	svm_model.fit(train_x, train_t)
@@ -29,4 +29,4 @@ def test_and_print_svm(test_x, test_t, svm):
 			num_correct += 1
 
 	# print value/test_size
-	print num_correct/test_size #accuracy
+	print "Accuracy: " + str(float(num_correct)/test_size) #accuracy
