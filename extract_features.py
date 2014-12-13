@@ -39,7 +39,7 @@ def parse_bigrams(infile, num_bigrams, star_param):
 
   return bigram_data
 
-def build_features(naive_classifier, review_string, most_common_words):
+def build_features(naive_classifier, review_words, most_common_words):
 
   # Feature vector format: [count_most_info_one_words, count_most_info_five_words, 
   #                         count_one_bigrams, count_five_bigrams, 
@@ -56,7 +56,6 @@ def build_features(naive_classifier, review_string, most_common_words):
   five_word_count = 0
   one_bigram_count = 0
   five_bigram_count = 0
-  review_words = review_string.split()
 
   feature_matrix = []
   
