@@ -13,7 +13,6 @@ def test_and_print_regression(test_x, test_t, regr):
 	test_size = test_t.shape[0]
 
 	predictions = regr.predict(test_x)
-
 	rounded_predictions = [round(pred, 0) for pred in predictions]
 
 	num_correct = 0
@@ -28,5 +27,5 @@ def test_and_print_regression(test_x, test_t, regr):
 		if rounded_predictions[i] == test_t[i]:
 			num_correct += 1
 
-	print value/test_size #avg error
-	print num_correct/test_size #accuracy
+	print "Average  Error: " + str(value/test_size) #avg error
+	print "Accuracy: " + str(float(num_correct)/test_size) #accuracy

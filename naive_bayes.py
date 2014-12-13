@@ -13,8 +13,8 @@ def read_star_reviews(infile, n):
 def build_test_set(reviews, num_train):
 	test_set = {1:[], 2:[], 3:[], 4:[], 5:[]}
 	for i in [1,2,3,4,5]:
-		#test_set[i].extend([{word: True for word in review} for review in reviews[i][num_train:]])
-		test_set[i].extend([{word: True for word in find_bigrams(review)} for review in reviews[i][num_train:]])
+		test_set[i].extend([{word: True for word in review} for review in reviews[i][num_train:]])
+		#test_set[i].extend([{word: True for word in find_bigrams(review)} for review in reviews[i][num_train:]])
 	return test_set
 
 def print_accuracies(classifier, test_set):
@@ -40,8 +40,8 @@ def output_prob_dist(classifier, test_set, outfile):
 def create_classifier(reviews, num_train):
 	train_set = []
 	for i in [1,2,3,4,5]:
-		#train_set.extend([({word: True for word in review}, i) for review in reviews[i][:num_train]])
-		train_set.extend([({word: True for word in find_bigrams(review)}, i) for review in reviews[i][:num_train]])
+		train_set.extend([({word: True for word in review}, i) for review in reviews[i][:num_train]])
+		#train_set.extend([({word: True for word in find_bigrams(review)}, i) for review in reviews[i][:num_train]])
 
 	test_set = build_test_set(reviews, num_train)
 
