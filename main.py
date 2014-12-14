@@ -8,6 +8,8 @@ import svm_classify
 import svm_regression
 import adjectives
 import verbs
+import string
+from sklearn import tree
 
 def main():
 
@@ -18,16 +20,16 @@ def main():
 	star_mcw_lists = common_words_by_star.get_common_words(reviews, 1500)
 	# star_mcw_list[1] is a list of most common 1 star words
 
-	print "Getting common adjectives"
-	adjectives.write_adjectives(reviews)
-	verbs.write_verbs(reviews)
-	mc_adj_list = adjectives.get_mc_adj("POS/adj_list1.txt", "POS/adj_list2.txt", "POS/adj_list3.txt", "POS/adj_list4.txt", "POS/adj_list5.txt", 15)   
-	mc_vb_list = verbs.get_mc_vb("POS/verb_list1.txt", "POS/verb_list2.txt", "POS/verb_list3.txt", "POS/verb_list4.txt", "POS/verb_list5.txt", 15)
+	# print "Getting common adjectives"
+	# adjectives.write_adjectives(reviews)
+	# verbs.write_verbs(reviews)
+	# mc_adj_list = adjectives.get_mc_adj("POS/adj_list1.txt", "POS/adj_list2.txt", "POS/adj_list3.txt", "POS/adj_list4.txt", "POS/adj_list5.txt", 15)   
+	# mc_vb_list = verbs.get_mc_vb("POS/verb_list1.txt", "POS/verb_list2.txt", "POS/verb_list3.txt", "POS/verb_list4.txt", "POS/verb_list5.txt", 15)
 	#print mc_adj_list
 	#print mc_vb_list
 
 	print "Training naive bayes classifier"
-	nb_num_train = 4000
+	nb_num_train = 1000
 	nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)
         #nb_classifier.show_most_informative_features(1000)
 
@@ -44,27 +46,21 @@ def main():
 	test_features = []
 	test_targets = []
 	for i in [1,2,3,4,5]:
-		for review in reviews[i][:500]:
+		for review in reviews[i][:1000]:
 			train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
 			train_targets.append(i)
-                for review in reviews[i][4500:5000]:
+        for review in reviews[i][1300:1500]:
 			test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
 			test_targets.append(i)
+
 
 	train_x = np.array(train_features)
 	train_t = np.array(train_targets)
 	test_x = np.array(test_features)
 	test_t = np.array(test_targets)
 
-	#print nb_classifier.show_most_informative_features(100)
-	#nb_test = naive_bayes.build_test_set(reviews, nb_num_train)
-	#naive_bayes.print_accuracies(nb_classifier, nb_test)
-
-	# to find the pdist for a review
-	#   probs =  nb_classifier.prob_classify(review)
-	#   one_star_probability = probs.prob(1)
-
-	#load into feature matrix
+	print train_x[0]
+	print train_t[0]
 
 	print "Running linear regression training"
 	regr = general_regression.lin_reg(train_x, train_t)
@@ -72,23 +68,61 @@ def main():
 	print "Testing regression"
 	general_regression.test_and_print_regression(test_x, test_t, regr)
 
+	# print "Running SVM classifier"
+	# svm_model = svm_classify.classify(train_x, train_t)
 
-	print "Running SVM classifier"
-	svm_model = svm_classify.classify(train_x, train_t)
+	# print "Testing SVM classifier"
+	# svm_classify.test_and_print_svm(test_x, test_t, svm_model)
 
-	print "Testing SVM classifier"
-	svm_classify.test_and_print_svm(test_x, test_t, svm_model)
+	# print "Running SVM regression"
+	# svm_reg_model = svm_regression.regression(train_x, train_t)
 
-#	print "Running SVM regression"
-#	svm_reg_model = svm_regression.regression(train_x, train_t)
-
-#	print "Testing SVM regression"
-#	svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
+	# print "Testing SVM regression"
+	# svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
 	
-	print "Running Decision Tree"
-	clf = tree.DecisionTreeClassifier()
-	clf = clf.fit(train_x, train_t)
-	general_regression.test_and_print_regression(test_x, test_t, clf)
+	# print "Running Decision Tree"
+	# clf = tree.DecisionTreeClassifier()
+	# decision_tree_model = clf.fit(train_x, train_t)
+	# general_regression.test_and_print_regression(test_x, test_t, decision_tree_model)
+
+
+	stopwords = []
+	with open("features_text/stopwords.txt") as s:
+		for line in s:
+			stopwords.append(s)
+
+	while True:
+		review = raw_input('Enter Review: ')
+		if review:
+			review = unicode(review.lower())
+			remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)		
+			review = review.translate(remove_punctuation_map)
+			review = [r for r in review.split() if r not in stopwords]
+			features = {}
+	
+			print "---------------------------"	
+			print "Naive Bayes Probabilities"
+			for r in review:
+				features[r] = True
+			probs = nb_classifier.prob_classify(features)
+			for i in [1,2,3,4,5]:
+				print str(i) + " Star Probability: " + str(probs.prob(i))
+			
+			featureVector = np.array([extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five)])
+			print "---------------------------"
+			print "Linear Regression"     		
+ 			print regr.predict(featureVector)[0]			
+			print "---------------------------"
+			# print "SVM Classification"
+			# print svm_model.predict(featureVector)[0]
+			# print "---------------------------"
+			# print "SVM Regression"
+			# print svm_reg_model.predict(featureVector)[0]
+			# print "---------------------------"
+			# print "Decision Tree"
+			# print decision_tree_model.predict(featureVector)[0]
+			# print "---------------------------"
+			# print "\n\n\n\n"
 
 
 if __name__ == "__main__":
