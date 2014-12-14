@@ -105,11 +105,11 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   five_word_count = 0
   for word in review_words:
     if word in most_common_words[1]:
-      one_word_count += 1
+      one_word_count -= 1
     if word in most_common_words[2]:
-      two_word_count += 1
+      two_word_count -= 1
     if word in most_common_words[3]:
-      three_word_count += 1
+      three_word_count += 0
     if word in most_common_words[4]:
       four_word_count += 1
     if word in most_common_words[5]:

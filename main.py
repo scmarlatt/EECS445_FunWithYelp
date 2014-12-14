@@ -1,11 +1,13 @@
-import general_regression
 import read_reviews
-import naive_bayes
-import extract_features
-import common_words_by_star
-import numpy as np
-import svm_classify
-import svm_regression
+# import general_regression
+# import naive_bayes
+# import extract_features
+# import common_words_by_star
+# import numpy as np
+# import svm_classify
+# import svm_regression
+import adjectives
+import verbs
 
 def main():
 
@@ -62,17 +64,17 @@ def main():
 	print "Testing regression"
 	general_regression.test_and_print_regression(test_x, test_t, regr)
 
-	# print "Running SVM classifier"
-	# svm_model = svm_classify.classify(train_x, train_t)
+	print "Running SVM classifier"
+	svm_model = svm_classify.classify(train_x, train_t)
 
-	# print "Testing SVM classifier"
-	# svm_classify.test_and_print_svm(test_x, test_t, svm_model)
+	print "Testing SVM classifier"
+	svm_classify.test_and_print_svm(test_x, test_t, svm_model)
 
-	# print "Running SVM regression"
-	# svm_reg_model = svm_regression.regression(train_x, train_t)
+	print "Running SVM regression"
+	svm_reg_model = svm_regression.regression(train_x, train_t)
 
-	# print "Testing SVM regression"
-	# svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
+	print "Testing SVM regression"
+	svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
 
 
 
