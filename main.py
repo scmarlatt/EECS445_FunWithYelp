@@ -15,7 +15,7 @@ def main():
   # reviews[1] is a list of all 15000 rfone star reviews
 
   	print "Getting common words"
-	star_mcw_lists = common_words_by_star.get_common_words(reviews, 50)
+	star_mcw_lists = common_words_by_star.get_common_words(reviews, 1500)
 	# star_mcw_list[1] is a list of most common 1 star words
 
 	print "Training naive bayes classifier"
@@ -35,10 +35,10 @@ def main():
 	test_targets = []
 	for i in [1,2,3,4,5]:
 		for review in reviews[i][:4000]:
-			train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists[i], words_one, words_five, bigrams_one, bigrams_five))
+			train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
 			train_targets.append(i)
 		for review in reviews[i][4000:]:
-			test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists[i], words_one, words_five, bigrams_one, bigrams_five))
+			test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
 			test_targets.append(i)
 
 	train_x = np.array(train_features)
@@ -62,17 +62,17 @@ def main():
 	print "Testing regression"
 	general_regression.test_and_print_regression(test_x, test_t, regr)
 
-	print "Running SVM classifier"
-	svm_model = svm_classify.classify(train_x, train_t)
+	# print "Running SVM classifier"
+	# svm_model = svm_classify.classify(train_x, train_t)
 
-	print "Testing SVM classifier"
-	svm_classify.test_and_print_svm(test_x, test_t, svm_model)
+	# print "Testing SVM classifier"
+	# svm_classify.test_and_print_svm(test_x, test_t, svm_model)
 
-	print "Running SVM regression"
-	svm_reg_model = svm_regression.regression(train_x, train_t)
+	# print "Running SVM regression"
+	# svm_reg_model = svm_regression.regression(train_x, train_t)
 
-	print "Testing SVM regression"
-	svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
+	# print "Testing SVM regression"
+	# svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
 
 
 
