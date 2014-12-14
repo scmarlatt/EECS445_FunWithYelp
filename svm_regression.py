@@ -4,13 +4,13 @@ from sklearn import datasets, linear_model, svm
 
 def regression(train_x, train_t):
 
-	svm_reg_model = svm.SVR(kernel='rbf', C=1e3, gamma=0.1)
+	svm_reg_model = svm.SVR(kernel='rbf')
 	svm_reg_model.fit(train_x, train_t)
 	return svm_reg_model
 
 def test_and_print_svm_regression(test_x, test_t, svm):
 
-	test_size = test_t.shape[0]
+	test_size = len(test_t) 
 
 	predictions = svm.predict(test_x)
 
