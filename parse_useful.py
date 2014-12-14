@@ -1,6 +1,6 @@
 import json
-#from nltk.stem.porter import *
-#from nltk.stem.snowball import SnowballStemmer
+from nltk.stem.porter import *
+from nltk.stem.snowball import SnowballStemmer
 import codecs
 import string
 
@@ -19,37 +19,36 @@ def main():
 
 	for word in restaurants:
 		ids.append(word.rstrip())
-	#stemmer = SnowballStemmer("english")
+	stemmer = SnowballStemmer("english")
 	for word in stopwords:
 		stopwords.append(word)
 
 	for line in f:
 		rec = json.loads(line.strip())
 		if (rec["business_id"] in ids):
-			r = rec["text"].lower()
-			print r
-			r2 = r.translate(None, '.,!?<>@%[]{}()^&$#;:"')
-			print r
+			r = unicode(rec["text"].lower())
+			remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
+			r2 = r.translate(remove_punctuation_map)
 
 			arr = r2.split(" ")
 			for i in range(0, len(arr)):
 				if arr[i] in stopwords:
 					arr[i] = ""
 				else:
-			 		#arr[i] = stemmer.stem(arr[i])
+			 		arr[i] = stemmer.stem(arr[i])
 			 		continue
 			final = ' '.join(arr)
 
 			if rec["stars"] == 1:
-				one_stars.write(final + "\n")
+				one_stars.write(final)
 			elif rec["stars"] == 2:
-				two_stars.write(final + "\n")
+				two_stars.write(final)
 			elif rec["stars"] == 3:
-				three_stars.write(final + "\n")			
+				three_stars.write(final)			
 			elif rec["stars"] == 4:
-				four_stars.write(final + "\n")
+				four_stars.write(final)
 			elif rec["stars"] == 5:
-				five_stars.write(final + "\n")
+				five_stars.write(final)
 
 if __name__ == "__main__":
   main()
