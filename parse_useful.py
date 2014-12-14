@@ -1,39 +1,55 @@
 import json
-from nltk.stem.porter import *
-from nltk.stem.snowball import SnowballStemmer
+#from nltk.stem.porter import *
+#from nltk.stem.snowball import SnowballStemmer
+import codecs
+import string
 
 def main():
-	punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
-	f = open('reviews_10k.json', 'r')
+	f = open('useful_reviews.json', 'r')
 	clean_review = ""
-	q = open('stopwords.txt')
+	q = open('features_text/stopwords.txt')
 	stopwords = []
-	restraunts = open('restaurant_ids.txt')
+	restaurants = open('features_text/restaurant_ids.txt')
 	ids = []
-	for word in restraunts:
-		ids.append(word)
-	stemmer = SnowballStemmer("english")
+	one_stars = codecs.open('one_stars.txt', "w", "utf-8")
+	two_stars = codecs.open('two_stars.txt', "w", "utf-8")
+	three_stars = codecs.open('three_stars.txt', "w", "utf-8")
+	four_stars = codecs.open('four_stars.txt', "w", "utf-8")
+	five_stars = codecs.open('five_stars.txt', "w", "utf-8")
+
+	for word in restaurants:
+		ids.append(word.rstrip())
+	#stemmer = SnowballStemmer("english")
 	for word in stopwords:
 		stopwords.append(word)
 
 	for line in f:
 		rec = json.loads(line.strip())
-		r = rec["text"].lower()
-		for char in r:
-			if char not in punctuations:
-				clean_review = clean_review + char
+		if (rec["business_id"] in ids):
+			r = rec["text"].lower()
+			print r
+			r2 = r.translate(None, '.,!?<>@%[]{}()^&$#;:"')
+			print r
 
-		arr = clean_review.split(" ")
-		for i in range(0, len(arr)):
-			if arr[i] in stopwords:
-				arr[i] = ""
-			else:
-		 		arr[i] = stemmer.stem(arr[i])
+			arr = r2.split(" ")
+			for i in range(0, len(arr)):
+				if arr[i] in stopwords:
+					arr[i] = ""
+				else:
+			 		#arr[i] = stemmer.stem(arr[i])
+			 		continue
+			final = ' '.join(arr)
 
-		final = ' '.join(arr)
-
-		if rec["votes"]["useful"] > 5 and (rec["business_id"] in ids):
-			print final
+			if rec["stars"] == 1:
+				one_stars.write(final + "\n")
+			elif rec["stars"] == 2:
+				two_stars.write(final + "\n")
+			elif rec["stars"] == 3:
+				three_stars.write(final + "\n")			
+			elif rec["stars"] == 4:
+				four_stars.write(final + "\n")
+			elif rec["stars"] == 5:
+				five_stars.write(final + "\n")
 
 if __name__ == "__main__":
   main()
