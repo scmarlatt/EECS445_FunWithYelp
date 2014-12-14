@@ -1,5 +1,6 @@
 star_texts
 yelp_academic_dataset_review.json
+useful_reviews.json
 *.tar
 /venv
 
