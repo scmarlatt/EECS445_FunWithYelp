@@ -4,7 +4,7 @@ from sklearn import datasets, linear_model, svm
 
 def classify(train_x, train_t):
 
-	svm_model = svm.SVC(kernel='rbf', C=1e3, gamma=0.1)
+	svm_model = svm.SVC(kernel='rbf')
 	svm_model.fit(train_x, train_t)
 	return svm_model
 
