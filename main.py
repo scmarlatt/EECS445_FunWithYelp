@@ -13,11 +13,11 @@ def main():
 
 
  
-    reviews = read_reviews.read(1)
+    reviews = read_reviews.read(100)
     # reviews[1] is a list of all 15000 rfone star reviews
     
-    adjectives.get_adjectives(reviews)
-    verbs.get_verbs(reviews)   
+    adjectives.write_adjectives(reviews)
+    verbs.write_verbs(reviews)   
 
     #  	print "Getting common words"
 	# star_mcw_lists = common_words_by_star.get_common_words(reviews, 50)

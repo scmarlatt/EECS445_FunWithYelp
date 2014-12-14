@@ -16,7 +16,7 @@ def write_verbs(reviews):
         except:
             continue
         for assignment in pos_assign:
-            if aassignment[1]=='VBP' or assignment[1]=='VBD':
+            if assignment[1]=='VBP' or assignment[1]=='VBD':
                 f1.write(assignment[0] + ' ')
 
     for review in reviews[2]:
