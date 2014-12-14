@@ -58,9 +58,8 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   total_fours_prob = 254632.0 / 780502
   total_fives_prob = 262959.0 / 780502
 
-
   feature_matrix = []
-  
+   
   for i in range(0, len(review_words)):
     word = review_words[i]
     if word in words_one:
@@ -86,9 +85,7 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   feature_matrix.append(float(five_word_count))
   feature_matrix.append(float(one_bigram_count))
   feature_matrix.append(float(five_bigram_count))
-
-
-
+  
   # Add info about probabilites
   probs = naive_classifier.prob_classify({word: True for word in review_words}) 
 
@@ -97,6 +94,12 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   feature_matrix.append(probs.prob(3) * total_threes_prob)
   feature_matrix.append(probs.prob(4) * total_fours_prob)
   feature_matrix.append(probs.prob(5) * total_fives_prob)
+  
+  feature_matrix.append(probs.prob(1))
+  feature_matrix.append(probs.prob(2))
+  feature_matrix.append(probs.prob(3))
+  feature_matrix.append(probs.prob(4))
+  feature_matrix.append(probs.prob(5))
 
   word_counts = {
     1:0,
@@ -167,6 +170,7 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   feature_matrix.append(float(verb_counts[4]))
   feature_matrix.append(float(verb_counts[5]))
   feature_matrix.append(len(review_words))
+  
   return feature_matrix
 
 

@@ -25,7 +25,7 @@ def main():
 	#print mc_vb_list
 
 
-  	print "Getting common words"
+	print "Getting common words"
 	star_mcw_lists = common_words_by_star.get_common_words(reviews, 1500)
 	# star_mcw_list[1] is a list of most common 1 star words
 
@@ -61,9 +61,9 @@ def main():
 	#nb_test = naive_bayes.build_test_set(reviews, nb_num_train)
 	#naive_bayes.print_accuracies(nb_classifier, nb_test)
 
-  # to find the pdist for a review
-  #   probs =  nb_classifier.prob_classify(review)
-  #   one_star_probability = probs.prob(1)
+	# to find the pdist for a review
+	#   probs =  nb_classifier.prob_classify(review)
+	#   one_star_probability = probs.prob(1)
 
 	#load into feature matrix
 
@@ -73,6 +73,7 @@ def main():
 	print "Testing regression"
 	general_regression.test_and_print_regression(test_x, test_t, regr)
 
+  
 	print "Running SVM classifier"
 	#svm_model = svm_classify.classify(train_x, train_t)
 
@@ -89,7 +90,6 @@ def main():
 	clf = tree.DecisionTreeClassifier()
 	clf = clf.fit(train_x, train_t)
 	general_regression.test_and_print_regression(test_x, test_t, clf)
-
 
 
 if __name__ == "__main__":
