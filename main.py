@@ -8,22 +8,11 @@ import svm_classify
 import svm_regression
 import adjectives
 import verbs
-from sklearn import tree
 
 def main():
 
-
- 
-	reviews = read_useful.read(5000)
-  # reviews[1] is a list of all 15000 rfone star reviews
-  	print "Getting common adjectives"
-	#adjectives.write_adjectives(reviews)
-	#verbs.write_verbs(reviews)
-	mc_adj_list = adjectives.get_mc_adj("POS/adj_list1.txt", "POS/adj_list2.txt", "POS/adj_list3.txt", "POS/adj_list4.txt", "POS/adj_list5.txt", 15)   
-	mc_vb_list = verbs.get_mc_vb("POS/verb_list1.txt", "POS/verb_list2.txt", "POS/verb_list3.txt", "POS/verb_list4.txt", "POS/verb_list5.txt", 15)
-	#print mc_adj_list
-	#print mc_vb_list
-
+	reviews = read_reviews.read_useful(5000)
+	# reviews[1] is a list of all 15000 rfone star reviews
 
 	print "Getting common words"
 	star_mcw_lists = common_words_by_star.get_common_words(reviews, 1500)
@@ -31,13 +20,15 @@ def main():
 
 	print "Training naive bayes classifier"
 	nb_num_train = 4000
-	nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)	
+	nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)
+        #nb_classifier.show_most_informative_features(1000)
+
 
 	print "Parsing most informative words and bigrams"
-	words_one = extract_features.parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "1")
-	words_five = extract_features.parse_most_info('features_text/most_informative_1_to_5.txt', 1000, "5")
-	bigrams_one = extract_features.parse_bigrams('features_text/bigrams.txt', 1000, "1")
-	bigrams_five = extract_features.parse_bigrams('features_text/bigrams.txt', 1000, "5")
+	words_one = extract_features.parse_most_info('features_text/most_informative_words_useful.txt', 500, "1")
+	words_five = extract_features.parse_most_info('features_text/most_informative_words_useful.txt', 500, "5")
+	bigrams_one = extract_features.parse_bigrams('features_text/most_informative_bigrams_useful.txt', 1000, "1")
+	bigrams_five = extract_features.parse_bigrams('features_text/most_informative_bigrams_useful.txt', 1000, "5")
 
 	print "Creating feature vectors"
 	train_features = []
@@ -46,10 +37,10 @@ def main():
 	test_targets = []
 	for i in [1,2,3,4,5]:
 		for review in reviews[i][:500]:
-			train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five, mc_adj_list, mc_vb_list))
+			train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
 			train_targets.append(i)
-		for review in reviews[i][4800:]:
-			test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five, mc_adj_list, mc_vb_list))
+                for review in reviews[i][4500:5000]:
+			test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
 			test_targets.append(i)
 
 	train_x = np.array(train_features)
@@ -73,23 +64,18 @@ def main():
 	print "Testing regression"
 	general_regression.test_and_print_regression(test_x, test_t, regr)
 
-  
+
 	print "Running SVM classifier"
-	#svm_model = svm_classify.classify(train_x, train_t)
+	svm_model = svm_classify.classify(train_x, train_t)
 
 	print "Testing SVM classifier"
-	#svm_classify.test_and_print_svm(test_x, test_t, svm_model)
+	svm_classify.test_and_print_svm(test_x, test_t, svm_model)
 
-	print "Running SVM regression"
-	#svm_reg_model = svm_regression.regression(train_x, train_t)
+#	print "Running SVM regression"
+#	svm_reg_model = svm_regression.regression(train_x, train_t)
 
-	print "Testing SVM regression"
-	#svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
-
-	print "Running Decision Tree"
-	clf = tree.DecisionTreeClassifier()
-	clf = clf.fit(train_x, train_t)
-	general_regression.test_and_print_regression(test_x, test_t, clf)
+#	print "Testing SVM regression"
+#	svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
 
 
 if __name__ == "__main__":
