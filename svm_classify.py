@@ -10,8 +10,6 @@ def classify(train_x, train_t):
 
 def test_and_print_svm(test_x, test_t, svm):
 
-	test_size = test_t.shape[0]
-
 	predictions = svm.predict(test_x)
 
 	# rounded_predictions = [round(pred, 0) for pred in predictions]
@@ -29,4 +27,4 @@ def test_and_print_svm(test_x, test_t, svm):
 			num_correct += 1
 
 	# print value/test_size
-	print "Accuracy: " + str(float(num_correct)/test_size) #accuracy
+	print "Accuracy: " + str(float(num_correct)/len(test_t)) #accuracy

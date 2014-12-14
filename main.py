@@ -14,7 +14,7 @@ from sklearn import tree
 def main():
 
     reviews = read_reviews.read_useful(1500)
-    reviews[1] is a list of all 15000 rfone star reviews
+    # reviews[1] is a list of all 15000 rfone star reviews
 
     print "Getting common words"
     star_mcw_lists = common_words_by_star.get_common_words(reviews, 1500)
@@ -31,7 +31,7 @@ def main():
     print "Training naive bayes classifier"
     nb_num_train = 1000
     nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)
-        #nb_classifier.show_most_informative_features(1000)
+    #nb_classifier.show_most_informative_features(1000)
 
 
     print "Parsing most informative words and bigrams"
@@ -46,7 +46,7 @@ def main():
     test_features = []
     test_targets = []
     for i in [1,2,3,4,5]:
-      for review in reviews[i][:1000]:
+        for review in reviews[i][:1000]:
           train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
           train_targets.append(i)
         for review in reviews[i][1300:1500]:
