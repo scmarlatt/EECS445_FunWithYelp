@@ -11,12 +11,20 @@ import verbs
 
 def main():
 
-	reviews = read_reviews.read_useful(5000)
+	reviews = read_reviews.read_useful(1500)
 	# reviews[1] is a list of all 15000 rfone star reviews
 
 	print "Getting common words"
 	star_mcw_lists = common_words_by_star.get_common_words(reviews, 1500)
 	# star_mcw_list[1] is a list of most common 1 star words
+
+	print "Getting common adjectives"
+	adjectives.write_adjectives(reviews)
+	verbs.write_verbs(reviews)
+	mc_adj_list = adjectives.get_mc_adj("POS/adj_list1.txt", "POS/adj_list2.txt", "POS/adj_list3.txt", "POS/adj_list4.txt", "POS/adj_list5.txt", 15)   
+	mc_vb_list = verbs.get_mc_vb("POS/verb_list1.txt", "POS/verb_list2.txt", "POS/verb_list3.txt", "POS/verb_list4.txt", "POS/verb_list5.txt", 15)
+	#print mc_adj_list
+	#print mc_vb_list
 
 	print "Training naive bayes classifier"
 	nb_num_train = 4000
@@ -76,6 +84,11 @@ def main():
 
 #	print "Testing SVM regression"
 #	svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
+	
+	print "Running Decision Tree"
+	clf = tree.DecisionTreeClassifier()
+	clf = clf.fit(train_x, train_t)
+	general_regression.test_and_print_regression(test_x, test_t, clf)
 
 
 if __name__ == "__main__":
