@@ -16,7 +16,7 @@ def main():
   three_stars = codecs.open('useful_reviews/three_stars.txt', "w", "utf-8")
   four_stars = codecs.open('useful_reviews/four_stars.txt', "w", "utf-8")
   five_stars = codecs.open('useful_reviews/five_stars.txt', "w", "utf-8")
-
+  not_words = ["couldn t", "wouldn t", "aren t", "can t", "didn t", "doesn t", "don t", "hadn t", "hasn t", "haven t", "isnt t", "musn t", "shouldn t", "won t"]
   for word in restaurants:
     ids.append(word.rstrip())
   stemmer = SnowballStemmer("english")
@@ -28,11 +28,12 @@ def main():
       r = unicode(rec["text"].lower())
       remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
       r2 = r.translate(remove_punctuation_map)
-
       arr = r2.split(" ")
       for i in range(0, len(arr)):
         if arr[i] in stopwords:
           arr[i] = ""
+        elif arr[i] in not_words:
+          arr[i] = "not"
         else:
          #  arr[i] = stemmer.stem(arr[i])
            continue

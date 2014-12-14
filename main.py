@@ -17,8 +17,8 @@ def main():
 	reviews = read_useful.read(5000)
   # reviews[1] is a list of all 15000 rfone star reviews
   	print "Getting common adjectives"
-	#adjectives.write_adjectives(reviews)
-	#verbs.write_verbs(reviews)
+	adjectives.write_adjectives(reviews)
+	verbs.write_verbs(reviews)
 	mc_adj_list = adjectives.get_mc_adj("POS/adj_list1.txt", "POS/adj_list2.txt", "POS/adj_list3.txt", "POS/adj_list4.txt", "POS/adj_list5.txt", 15)   
 	mc_vb_list = verbs.get_mc_vb("POS/verb_list1.txt", "POS/verb_list2.txt", "POS/verb_list3.txt", "POS/verb_list4.txt", "POS/verb_list5.txt", 15)
 	#print mc_adj_list
