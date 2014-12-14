@@ -75,6 +75,6 @@ def get_mc_adj(infile1, infile2, infile3, infile4, infile5, num_words):
     
     most_common_words_lists = {}
     for i in [1,2,3,4,5]:
-        most_common_words_lists[i] = [word[0] for word in fdists[i].most_common(num_words)]
+        most_common_words_lists[i] = fdists[i].most_common(num_words)
 
     return most_common_words_lists

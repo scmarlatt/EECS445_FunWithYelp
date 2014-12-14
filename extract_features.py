@@ -39,7 +39,7 @@ def parse_bigrams(infile, num_bigrams, star_param):
 
   return bigram_data
 
-def build_features(naive_classifier, review_words, most_common_words, words_one, words_five, bigrams_one, bigrams_five):
+def build_features(naive_classifier, review_words, most_common_words, words_one, words_five, bigrams_one, bigrams_five, adj_list, verb_list):
 
   # Feature vector format: [count_most_info_one_words, count_most_info_five_words, 
   #                         count_one_bigrams, count_five_bigrams, 
@@ -98,28 +98,74 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   feature_matrix.append(probs.prob(4) * total_fours_prob)
   feature_matrix.append(probs.prob(5) * total_fives_prob)
 
-  one_word_count = 0
-  two_word_count = 0
-  three_word_count = 0
-  four_word_count = 0
-  five_word_count = 0
-  for word in review_words:
-    if word in most_common_words[1]:
-      one_word_count -= 1
-    if word in most_common_words[2]:
-      two_word_count -= 1
-    if word in most_common_words[3]:
-      three_word_count += 0
-    if word in most_common_words[4]:
-      four_word_count += 1
-    if word in most_common_words[5]:
-      five_word_count += 1
+  word_counts = {
+    1:0,
+    2:0,
+    3:0,
+    4:0,
+    5:0
+  }
 
-  feature_matrix.append(float(one_word_count))
-  feature_matrix.append(float(two_word_count))
-  feature_matrix.append(float(three_word_count))
-  feature_matrix.append(float(four_word_count))
-  feature_matrix.append(float(five_word_count))
+  adj_counts = {
+    1:0,
+    2:0,
+    3:0,
+    4:0,
+    5:0
+  }
+
+  verb_counts = {
+    1:0,
+    2:0,
+    3:0,
+    4:0,
+    5:0
+  }
+
+  for word in review_words:
+    if word != "good":
+      for n in [1,2,3,4,5]:
+        for mcw in most_common_words[n]:
+          if word == mcw[0]:
+            if n < 3:
+              word_counts[n] -= mcw[1]
+            elif n > 3:
+              word_counts[n] += mcw[1]
+            else:
+              word_counts[n] += 1
+        for adj in adj_list[n]:
+          if word == adj[0]:
+            if n < 3:
+              adj_counts[n] -= adj[1]
+            elif n > 3:
+              adj_counts[n] += adj[1]
+            else:
+              adj_counts[n] += 1
+        for verb in verb_list[n]:
+          if word == verb[0]:
+            if n < 3:
+              verb_counts[n] -= verb[1]
+            elif n > 3:
+              verb_counts[n] += verb[1]
+            else:
+              verb_counts[n] += 1
+
+
+  feature_matrix.append(float(word_counts[1]))
+  feature_matrix.append(float(word_counts[2]))
+  feature_matrix.append(float(word_counts[3]))
+  feature_matrix.append(float(word_counts[4]))
+  feature_matrix.append(float(word_counts[5]))
+  feature_matrix.append(float(adj_counts[1]))
+  feature_matrix.append(float(adj_counts[2]))
+  feature_matrix.append(float(adj_counts[3]))
+  feature_matrix.append(float(adj_counts[4]))
+  feature_matrix.append(float(adj_counts[5]))
+  feature_matrix.append(float(verb_counts[1]))
+  feature_matrix.append(float(verb_counts[2]))
+  feature_matrix.append(float(verb_counts[3]))
+  feature_matrix.append(float(verb_counts[4]))
+  feature_matrix.append(float(verb_counts[5]))
   feature_matrix.append(len(review_words))
   return feature_matrix
 
