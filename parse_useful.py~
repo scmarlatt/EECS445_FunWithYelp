@@ -22,8 +22,8 @@ def main():
 	stemmer = SnowballStemmer("english")
 	for word in stopwords:
 		stopwords.append(word)
-
-	for line in f:
+  print stopwords
+  for line in f:
 		rec = json.loads(line.strip())
 		if (rec["business_id"] in ids):
 			r = unicode(rec["text"].lower())
@@ -35,21 +35,20 @@ def main():
 				if arr[i] in stopwords:
 					arr[i] = ""
 				else:
-			 		arr[i] = stemmer.stem(arr[i])
+			 	#	arr[i] = stemmer.stem(arr[i])
 			 		continue
 			final = ' '.join(arr)
-      print final
-
+      final = final.replace('\n', ' ')
 			if rec["stars"] == 1:
-				one_stars.write(final + "\n")
+				one_stars.write(final)
 			elif rec["stars"] == 2:
-				two_stars.write(final + "\n")
+				two_stars.write(final)
 			elif rec["stars"] == 3:
-				three_stars.write(final + "\n")			
+				three_stars.write(final)			
 			elif rec["stars"] == 4:
-				four_stars.write(final + "\n")
+				four_stars.write(final)
 			elif rec["stars"] == 5:
-				five_stars.write(final + "\n")
+				five_stars.write(final)
 
 if __name__ == "__main__":
   main()
