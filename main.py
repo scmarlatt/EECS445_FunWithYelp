@@ -13,23 +13,21 @@ from sklearn import tree
 
 def main():
 
-    reviews = read_reviews.read_useful(1500)
+    reviews = read_reviews.read_useful(1700)
     # reviews[1] is a list of all 15000 rfone star reviews
 
     print "Getting common words"
-    star_mcw_lists = common_words_by_star.get_common_words(reviews, 1500)
+    star_mcw_lists = common_words_by_star.get_common_words(reviews, 500)
     # star_mcw_list[1] is a list of most common 1 star words
 
     # print "Getting common adjectives"
-    # adjectives.write_adjectives(reviews)
-    # verbs.write_verbs(reviews)
-    # mc_adj_list = adjectives.get_mc_adj("POS/adj_list1.txt", "POS/adj_list2.txt", "POS/adj_list3.txt", "POS/adj_list4.txt", "POS/adj_list5.txt", 15)   
-    # mc_vb_list = verbs.get_mc_vb("POS/verb_list1.txt", "POS/verb_list2.txt", "POS/verb_list3.txt", "POS/verb_list4.txt", "POS/verb_list5.txt", 15)
+    mc_adj_list = adjectives.get_mc_adj("POS/adj_list1.txt", "POS/adj_list2.txt", "POS/adj_list3.txt", "POS/adj_list4.txt", "POS/adj_list5.txt", 15)   
+    mc_vb_list = verbs.get_mc_vb("POS/verb_list1.txt", "POS/verb_list2.txt", "POS/verb_list3.txt", "POS/verb_list4.txt", "POS/verb_list5.txt", 15)
     #print mc_adj_list
     #print mc_vb_list
 
     print "Training naive bayes classifier"
-    nb_num_train = 1000
+    nb_num_train = 1500
     nb_classifier = naive_bayes.create_classifier(reviews, nb_num_train)
     #nb_classifier.show_most_informative_features(1000)
 
@@ -46,11 +44,11 @@ def main():
     test_features = []
     test_targets = []
     for i in [1,2,3,4,5]:
-        for review in reviews[i][:1000]:
-          train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
+        for review in reviews[i][:1500]:
+          train_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five, mc_adj_list, mc_vb_list))
           train_targets.append(i)
-        for review in reviews[i][1300:1500]:
-          test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five))
+        for review in reviews[i][1500:1700]:
+          test_features.append(extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five, mc_adj_list, mc_vb_list))
           test_targets.append(i)
 
 
@@ -59,26 +57,23 @@ def main():
     test_x = np.array(test_features)
     test_t = np.array(test_targets)
 
-    print train_x[0]
-    print train_t[0]
-
     print "Running linear regression training"
     regr = general_regression.lin_reg(train_x, train_t)
 
     print "Testing regression"
     general_regression.test_and_print_regression(test_x, test_t, regr)
 
-    print "Running SVM classifier"
-    svm_model = svm_classify.classify(train_x, train_t)
+    #print "Running SVM classifier"
+    #svm_model = svm_classify.classify(train_x, train_t)
 
-    print "Testing SVM classifier"
-    svm_classify.test_and_print_svm(test_x, test_t, svm_model)
+    #print "Testing SVM classifier"
+    #svm_classify.test_and_print_svm(test_x, test_t, svm_model)
 
-    print "Running SVM regression"
-    svm_reg_model = svm_regression.regression(train_x, train_t)
+    #print "Running SVM regression"
+    #svm_reg_model = svm_regression.regression(train_x, train_t)
 
-    print "Testing SVM regression"
-    svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
+    #print "Testing SVM regression"
+    #svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
     
     print "Running Decision Tree"
     clf = tree.DecisionTreeClassifier()
@@ -139,21 +134,21 @@ def main():
             for i in [1,2,3,4,5]:
               print str(i) + " Star Probability: " + str(probs.prob(i))
             
-            featureVector = np.array([extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five)])
+            featureVector = np.array([extract_features.build_features(nb_classifier, review, star_mcw_lists, words_one, words_five, bigrams_one, bigrams_five, mc_adj_list, mc_vb_list)])
             print "---------------------------"
             print "Linear Regression"             
             print regr.predict(featureVector)[0]            
-            print "---------------------------"
-            print "SVM Classification"
-            print svm_model.predict(featureVector)[0]
-            print "---------------------------"
-            print "SVM Regression"
-            print svm_reg_model.predict(featureVector)[0]
+            #print "---------------------------"
+            #print "SVM Classification"
+            #print svm_model.predict(featureVector)[0]
+            #print "---------------------------"
+            #print "SVM Regression"
+            #print svm_reg_model.predict(featureVector)[0]
             print "---------------------------"
             print "Decision Tree"
             print decision_tree_model.predict(featureVector)[0]
             print "---------------------------"
-            print "\n\n\n\n"
+            print "\n\n"
 
 
 if __name__ == "__main__":
