@@ -63,17 +63,17 @@ def main():
     print "Testing regression"
     general_regression.test_and_print_regression(test_x, test_t, regr)
 
-    #print "Running SVM classifier"
-    #svm_model = svm_classify.classify(train_x, train_t)
+    print "Running SVM classifier"
+    svm_model = svm_classify.classify(train_x, train_t)
 
-    #print "Testing SVM classifier"
-    #svm_classify.test_and_print_svm(test_x, test_t, svm_model)
+    print "Testing SVM classifier"
+    svm_classify.test_and_print_svm(test_x, test_t, svm_model)
 
-    #print "Running SVM regression"
-    #svm_reg_model = svm_regression.regression(train_x, train_t)
+    print "Running SVM regression"
+    svm_reg_model = svm_regression.regression(train_x, train_t)
 
-    #print "Testing SVM regression"
-    #svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
+    print "Testing SVM regression"
+    svm_regression.test_and_print_svm_regression(test_x, test_t, svm_reg_model)
     
     print "Running Decision Tree"
     clf = tree.DecisionTreeClassifier()
@@ -138,12 +138,12 @@ def main():
             print "---------------------------"
             print "Linear Regression"             
             print regr.predict(featureVector)[0]            
-            #print "---------------------------"
-            #print "SVM Classification"
-            #print svm_model.predict(featureVector)[0]
-            #print "---------------------------"
-            #print "SVM Regression"
-            #print svm_reg_model.predict(featureVector)[0]
+            print "---------------------------"
+            print "SVM Classification"
+            print svm_model.predict(featureVector)[0]
+            print "---------------------------"
+            print "SVM Regression"
+            print svm_reg_model.predict(featureVector)[0]
             print "---------------------------"
             print "Decision Tree"
             print decision_tree_model.predict(featureVector)[0]

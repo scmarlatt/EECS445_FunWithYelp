@@ -59,7 +59,7 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   total_fives_prob = 262959.0 / 780502
 
   feature_matrix = []
-   
+     
   for i in range(0, len(review_words)):
     word = review_words[i]
     if word in words_one:
@@ -69,7 +69,7 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
 
     if i == len(review_words) - 1:
       break
-  
+
     next_word = review_words[i+1]
     for elt in bigrams_one:
       if (elt.word1 == word and elt.word2 == next_word) or (elt.word1 == next_word and elt.word2 == word):
@@ -85,7 +85,7 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   feature_matrix.append(float(five_word_count))
   feature_matrix.append(float(one_bigram_count))
   feature_matrix.append(float(five_bigram_count))
-  
+   
   # Add info about probabilites
   probs = naive_classifier.prob_classify({word: True for word in review_words}) 
 
@@ -94,13 +94,13 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   feature_matrix.append(probs.prob(3) * total_threes_prob)
   feature_matrix.append(probs.prob(4) * total_fours_prob)
   feature_matrix.append(probs.prob(5) * total_fives_prob)
-  
+   
   feature_matrix.append(probs.prob(1))
   feature_matrix.append(probs.prob(2))
   feature_matrix.append(probs.prob(3))
   feature_matrix.append(probs.prob(4))
   feature_matrix.append(probs.prob(5))
-
+  ''' 
   word_counts = {
     1:0,
     2:0,
@@ -124,41 +124,27 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
     4:0,
     5:0
   }
-
+  
   for word in review_words:
-    if word != "good":
-      for n in [1,2,3,4,5]:
-        for mcw in most_common_words[n]:
-          if word == mcw[0]:
-            if n < 3:
-              word_counts[n] -= mcw[1]
-            elif n > 3:
-              word_counts[n] += mcw[1]
-            else:
-              word_counts[n] += 1
-        for adj in adj_list[n]:
-          if word == adj[0]:
-            if n < 3:
-              adj_counts[n] -= adj[1]
-            elif n > 3:
-              adj_counts[n] += adj[1]
-            else:
-              adj_counts[n] += 1
-        for verb in verb_list[n]:
-          if word == verb[0]:
-            if n < 3:
-              verb_counts[n] -= verb[1]
-            elif n > 3:
-              verb_counts[n] += verb[1]
-            else:
-              verb_counts[n] += 1
+    for n in [1,2,3,4,5]:
+      for adj in adj_list[n]:
+        if word == adj[0]:
+          if n < 3:
+            adj_counts[n] -= adj[1]
+          elif n > 3:
+            adj_counts[n] += adj[1]
+          else:
+            adj_counts[n] += 1
+      for verb in verb_list[n]:
+        if word == verb[0]:
+          if n < 3:
+            verb_counts[n] -= verb[1]
+          elif n > 3:
+            verb_counts[n] += verb[1]
+          else:
+            verb_counts[n] += 1
 
 
-  feature_matrix.append(float(word_counts[1]))
-  feature_matrix.append(float(word_counts[2]))
-  feature_matrix.append(float(word_counts[3]))
-  feature_matrix.append(float(word_counts[4]))
-  feature_matrix.append(float(word_counts[5]))
   feature_matrix.append(float(adj_counts[1]))
   feature_matrix.append(float(adj_counts[2]))
   feature_matrix.append(float(adj_counts[3]))
@@ -170,7 +156,7 @@ def build_features(naive_classifier, review_words, most_common_words, words_one,
   feature_matrix.append(float(verb_counts[4]))
   feature_matrix.append(float(verb_counts[5]))
   feature_matrix.append(len(review_words))
-  
+  ''' 
   return feature_matrix
 
 
